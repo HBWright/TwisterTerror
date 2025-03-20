@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=4 uid="uid://cf5pbv43jdxpe"]
+
+[ext_resource type="PackedScene" uid="uid://c1wju77r3clhd" path="res://scenes/Objects/Level1/level_1.tscn" id="1_f2a5t"]
+[ext_resource type="Texture2D" uid="uid://dvremmoorh648" path="res://assets/damage.png" id="1_ms2es"]
+[ext_resource type="PackedScene" uid="uid://csmatrfvd3js3" path="res://scenes/Player.tscn" id="2_ms2es"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eruj1"]
+texture = ExtResource("1_ms2es")
+2:0/0 = 0
+4:0/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1jyyf"]
+sources/0 = SubResource("TileSetAtlasSource_eruj1")
+
+[node name="Town" type="Node2D"]
+position = Vector2(-8, 8)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-8, 0)
+tile_map_data = PackedByteArray("AAD5//7/AAACAAEAAAAAAP3/AAAEAAEAAAAAAPz/AAAEAAEAAAD5//3/AAACAAEAAAD5//z/AAACAAEAAAD2////AAAAAAIAAAD3////AAABAAIAAAD6//7/AAADAAIAAAD7//7/AAADAAIAAAD8//7/AAADAAIAAAD9//7/AAADAAIAAAD+//7/AAADAAIAAAD///7/AAADAAIAAAAAAP7/AAADAAIAAAABAP7/AAADAAIAAAACAP7/AAADAAIAAAADAP7/AAADAAIAAAAEAP7/AAADAAIAAAAFAP7/AAADAAIAAAD1////AAAFAAIAAAD0////AAAGAAIAAAA=")
+tile_set = SubResource("TileSet_1jyyf")
+
+[node name="Twister" parent="." instance=ExtResource("2_ms2es")]
+position = Vector2(-48, -88)
+
+[node name="Level 1" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-24, -16)
+
+[node name="Level 2" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-40, -16)
+
+[node name="Level 3" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-56, -16)
+
+[node name="Level 4" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-72, -16)
+
+[node name="Level 5" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-88, -16)
+
+[node name="Level 6" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-104, -16)
+
+[node name="Level 7" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(72, -16)
+
+[node name="Level 8" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(56, -16)
+
+[node name="Level 9" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(40, -16)
+
+[node name="Level 10" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(24, -16)
+
+[node name="Level 11" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(8, -16)
+
+[node name="Level 12" parent="." instance=ExtResource("1_f2a5t")]
+position = Vector2(-8, -16)
