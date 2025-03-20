@@ -10,7 +10,7 @@ func _ready():
 	
 func _physics_process(_delta: float) -> void:
 	direction.x = Input.get_axis("Left", "Right")
-	direction.y = Input.get_axis("Down", "Up")
+	direction.y = Input.get_axis("Up", "Down")
 	direction = direction.normalized()
 	
 	if direction.x:
@@ -24,3 +24,8 @@ func _physics_process(_delta: float) -> void:
 		velocity.y = move_toward(velocity.y, speed * direction.y, accel)
 		
 	move_and_slide()
+	
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area is Area2D:
+		print("helloooooooo")

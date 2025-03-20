@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://csmatrfvd3js3"]
+[gd_scene load_steps=19 format=3 uid="uid://csmatrfvd3js3"]
 
 [ext_resource type="Texture2D" uid="uid://dr7mh5e8wbxsi" path="res://assets/Twister-Sheet.png" id="1_p0vlq"]
-[ext_resource type="Script" uid="uid://bss176xf2gjjq" path="res://scenes/player.gd" id="1_v6fml"]
+[ext_resource type="Script" uid="uid://bss176xf2gjjq" path="res://scenes/Twister/player.gd" id="1_v6fml"]
+[ext_resource type="PackedScene" uid="uid://bwfo8087fa3mm" path="res://scenes/manager.tscn" id="3_3li8b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kpjcp"]
 atlas = ExtResource("1_p0vlq")
@@ -113,7 +114,7 @@ script = ExtResource("1_v6fml")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_d6rpx")
 animation = &"Twister"
-frame_progress = 0.480797
+frame_progress = 0.924181
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
@@ -126,3 +127,9 @@ shape = SubResource("CircleShape2D_jatw7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("3_3li8b")]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

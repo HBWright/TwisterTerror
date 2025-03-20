@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxp3eo3whpam2"
-path="res://.godot/imported/angry general.png-783e2cbcfb84287364c2988c342377dc.ctex"
+uid="uid://dvremmoorh648"
+path="res://.godot/imported/damage.png-664ae30f6c5a7c99af240f3dcf12bcba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/angry general.png"
-dest_files=["res://.godot/imported/angry general.png-783e2cbcfb84287364c2988c342377dc.ctex"]
+source_file="res://assets/damage.png"
+dest_files=["res://.godot/imported/damage.png-664ae30f6c5a7c99af240f3dcf12bcba.ctex"]
 
 [params]
 

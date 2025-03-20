@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dr7mh5e8wbxsi"
-path="res://.godot/imported/Twister-Sheet.png-fbbb1235cc571fa03b47f34175878f20.ctex"
+uid="uid://myevyg33hd8s"
+path="res://.godot/imported/barfull.png-b8f8b3f9b4599e068113971746843034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Twister-Sheet.png"
-dest_files=["res://.godot/imported/Twister-Sheet.png-fbbb1235cc571fa03b47f34175878f20.ctex"]
+source_file="res://assets/barfull.png"
+dest_files=["res://.godot/imported/barfull.png-b8f8b3f9b4599e068113971746843034.ctex"]
 
 [params]
 

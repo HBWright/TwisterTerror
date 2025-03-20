@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c1wju77r3clhd" path="res://scenes/Objects/Level1/level_1.tscn" id="1_f2a5t"]
 [ext_resource type="Texture2D" uid="uid://dvremmoorh648" path="res://assets/damage.png" id="1_ms2es"]
-[ext_resource type="PackedScene" uid="uid://csmatrfvd3js3" path="res://scenes/Player.tscn" id="2_ms2es"]
+[ext_resource type="PackedScene" uid="uid://csmatrfvd3js3" path="res://scenes/Twister/Player.tscn" id="2_ms2es"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eruj1"]
 texture = ExtResource("1_ms2es")
@@ -32,7 +32,7 @@ tile_map_data = PackedByteArray("AAD5//7/AAACAAEAAAAAAP3/AAAEAAEAAAAAAPz/AAAEAAE
 tile_set = SubResource("TileSet_1jyyf")
 
 [node name="Twister" parent="." instance=ExtResource("2_ms2es")]
-position = Vector2(-48, -88)
+position = Vector2(-168, -16)
 
 [node name="Level 1" parent="." instance=ExtResource("1_f2a5t")]
 position = Vector2(-24, -16)
