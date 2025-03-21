@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dshkefml1i4b"]
+
+[ext_resource type="PackedScene" uid="uid://c1wju77r3clhd" path="res://scenes/Objects/Level1/base/level_1.tscn" id="1_75bap"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_75bap"]
+load_path = "res://.godot/imported/tilemap.png-5e61b4f08267e3455a4ee95d454c23fa.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8tuk"]
+size = Vector2(16, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lsiyl"]
+size = Vector2(14, 13)
+
+[node name="Level 1" instance=ExtResource("1_75bap")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = SubResource("CompressedTexture2D_75bap")
+region_rect = Rect2(288, 224, 16, 16)
+
+[node name="CollisionShape2D" parent="Collider" index="0"]
+shape = SubResource("RectangleShape2D_t8tuk")
+
+[node name="Hitbox" parent="." index="2"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_lsiyl")

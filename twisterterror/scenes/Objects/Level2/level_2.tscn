@@ -1,0 +1,113 @@
+[gd_scene load_steps=8 format=3 uid="uid://djlib1up74tjk"]
+
+[ext_resource type="Script" uid="uid://47jjcpjs8gos" path="res://scenes/Objects/Level2/level_2.gd" id="1_vkrom"]
+[ext_resource type="Texture2D" uid="uid://bi10emnb11yu4" path="res://assets/tilemap.png" id="2_bnh3q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77u1t"]
+size = Vector2(30, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8dfpq"]
+size = Vector2(30, 14)
+
+[sub_resource type="Animation" id="Animation_i14x4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.764706, 0.219608, 0.27451, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1qa8t"]
+resource_name = "hurtEffect"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.764706, 0.219608, 0.27451, 0.8), Color(1, 1, 1, 0.890196)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 0.000113137),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.5, 0), Vector2(-0.5, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2fj32"]
+_data = {
+&"RESET": SubResource("Animation_i14x4"),
+&"hurtEffect": SubResource("Animation_1qa8t")
+}
+
+[node name="level_2" type="Area2D"]
+script = ExtResource("1_vkrom")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+clip_children = 2
+texture_filter = 1
+texture = ExtResource("2_bnh3q")
+region_enabled = true
+region_rect = Rect2(192, 256, 32, 16)
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D"]
+clip_children = 2
+offset_left = -18.0
+offset_top = -19.0
+offset_right = 22.0
+offset_bottom = 21.0
+color = Color(0.764706, 0.219608, 0.27451, 0)
+
+[node name="Collider" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collider"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_77u1t")
+
+[node name="Hurtbox" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8dfpq")
+
+[node name="DamageTimer" type="Timer" parent="."]
+
+[node name="HurtAnimTimer" type="Timer" parent="."]
+
+[node name="hurt" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_2fj32")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="timeout" from="DamageTimer" to="." method="_on_damage_timer_timeout"]
+[connection signal="timeout" from="HurtAnimTimer" to="." method="_on_hurt_anim_timer_timeout"]

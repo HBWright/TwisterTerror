@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://nx73wglvcp43"]
+
+[ext_resource type="PackedScene" uid="uid://c1wju77r3clhd" path="res://scenes/Objects/Level1/base/level_1.tscn" id="1_jgq6o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jgq6o"]
+size = Vector2(16, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jdir6"]
+size = Vector2(14, 13)
+
+[node name="Level 1" instance=ExtResource("1_jgq6o")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(288, 256, 16, 16)
+
+[node name="CollisionShape2D" parent="Collider" index="0"]
+shape = SubResource("RectangleShape2D_jgq6o")
+
+[node name="Hitbox" parent="." index="2"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_jdir6")
