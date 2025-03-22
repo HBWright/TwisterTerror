@@ -12,6 +12,8 @@ extends Node
 @export var level = 0
 
 signal upgrade
+signal death
+signal hurt
 
 func _ready() -> void:
 	emit_signal("upgrade")

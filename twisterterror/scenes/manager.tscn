@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bwfo8087fa3mm"]
+[gd_scene load_steps=52 format=3 uid="uid://bwfo8087fa3mm"]
 
 [ext_resource type="Texture2D" uid="uid://bxp3eo3whpam2" path="res://assets/angry general.png" id="1_bdh1m"]
 [ext_resource type="Script" uid="uid://vade0nfaxatu" path="res://scripts/manager.gd" id="1_gq280"]
@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://bnqw8tea5whhf" path="res://scripts/score.gd" id="6_cphvb"]
 [ext_resource type="FontFile" uid="uid://8uhqyflogrwk" path="res://assets/PIXEARG_.TTF" id="6_j5tnm"]
 [ext_resource type="Script" uid="uid://dixv0i0jl62cc" path="res://scripts/level.gd" id="7_o1c0c"]
+[ext_resource type="Texture2D" uid="uid://dq1bnotu0lmn5" path="res://assets/cyclone.png" id="9_3ftge"]
+[ext_resource type="Texture2D" uid="uid://coiluutg83jru" path="res://assets/level-up.png" id="9_xiihq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smm52"]
 atlas = ExtResource("1_bdh1m")
@@ -266,6 +268,131 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="Animation" id="Animation_uujcr"]
+resource_name = "spin"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.933033, 1),
+"update": 0,
+"values": [0.0, 1.5708]
+}
+
+[sub_resource type="Animation" id="Animation_3ftge"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_htctp"]
+_data = {
+&"RESET": SubResource("Animation_3ftge"),
+&"spin": SubResource("Animation_uujcr")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ftge"]
+atlas = ExtResource("9_xiihq")
+region = Rect2(0, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uujcr"]
+atlas = ExtResource("9_xiihq")
+region = Rect2(144, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htctp"]
+atlas = ExtResource("9_xiihq")
+region = Rect2(288, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1d0ly"]
+atlas = ExtResource("9_xiihq")
+region = Rect2(432, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66mhd"]
+atlas = ExtResource("9_xiihq")
+region = Rect2(576, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp7tt"]
+atlas = ExtResource("9_xiihq")
+region = Rect2(720, 0, 144, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3yqbw"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_3ftge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uujcr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htctp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1d0ly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66mhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp7tt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_xd0ga"]
+resource_name = "levelupbounce"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("levelup:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.3),
+"transitions": PackedFloat32Array(0.000333504, 0.000205297),
+"update": 0,
+"values": [Vector2(578, 322), Vector2(578, 326)]
+}
+
+[sub_resource type="Animation" id="Animation_q87iy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("levelup:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(578, 322)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rjalq"]
+_data = {
+&"RESET": SubResource("Animation_q87iy"),
+&"levelupbounce": SubResource("Animation_xd0ga")
+}
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -285,7 +412,7 @@ autoplay = "laughing"
 
 [node name="Report" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(392, 613)
+position = Vector2(392, 601)
 scale = Vector2(5.5, 5.5)
 texture = ExtResource("1_bdh1m")
 region_enabled = true
@@ -306,10 +433,10 @@ texture_progress = ExtResource("5_j5tnm")
 
 [node name="Score" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 976.0
-offset_top = 592.0
-offset_right = 1120.0
-offset_bottom = 632.0
+offset_left = 651.0
+offset_top = 56.0
+offset_right = 795.0
+offset_bottom = 96.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/normal_font = ExtResource("6_j5tnm")
@@ -318,12 +445,41 @@ script = ExtResource("6_cphvb")
 
 [node name="Level" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 533.0
+offset_left = 377.0
 offset_top = 56.0
-offset_right = 693.0
+offset_right = 537.0
 offset_bottom = 120.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/normal_font = ExtResource("6_j5tnm")
-text = "Level: 0"
+text = "Level : 0"
 script = ExtResource("7_o1c0c")
+
+[node name="cyclone" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1064, 560)
+scale = Vector2(4.90625, 4.90625)
+texture = ExtResource("9_3ftge")
+
+[node name="cyclonespin" type="AnimationPlayer" parent="cyclone"]
+libraries = {
+&"": SubResource("AnimationLibrary_htctp")
+}
+
+[node name="levelup" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 322)
+scale = Vector2(4.90625, 4.90625)
+sprite_frames = SubResource("SpriteFrames_3yqbw")
+frame = 3
+frame_progress = 0.392424
+
+[node name="levelupbounce" type="AnimationPlayer" parent="levelup"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_rjalq")
+}
+
+[node name="Death Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Death Timer" to="." method="_on_death_timer_timeout"]

@@ -11,6 +11,8 @@ var direction : Vector2
 func _ready():
 	anim.play()
 	anim.scale = Vector2(1,1)
+	Global.death.connect(death)
+	Global.hurt.connect(hurt)
 	
 func _process(delta: float) -> void:
 	anim.scale.x = Global.player_size
@@ -44,3 +46,9 @@ func _physics_process(_delta: float) -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area is Area2D:
 		print("helloooooooo")
+		
+func hurt():
+	anim.play("Twister-Damaged")
+
+func death():
+	queue_free()

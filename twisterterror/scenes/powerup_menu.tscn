@@ -33,6 +33,7 @@ offset_bottom = 40.0
 
 [node name="Attack1" type="Button" parent="Options"]
 texture_filter = 1
+layout_mode = 0
 offset_left = 160.0
 offset_top = 168.0
 offset_right = 306.0
@@ -45,6 +46,7 @@ icon = ExtResource("3_faxy2")
 
 [node name="Attack2" type="Button" parent="Options"]
 texture_filter = 1
+layout_mode = 0
 offset_left = 480.0
 offset_top = 168.0
 offset_right = 626.0
@@ -57,6 +59,7 @@ icon = ExtResource("3_faxy2")
 
 [node name="Attack3" type="Button" parent="Options"]
 texture_filter = 1
+layout_mode = 0
 offset_left = 800.0
 offset_top = 168.0
 offset_right = 946.0
@@ -69,6 +72,7 @@ icon = ExtResource("3_faxy2")
 
 [node name="Skip" type="Button" parent="Options"]
 texture_filter = 1
+layout_mode = 0
 offset_left = 430.0
 offset_top = 520.0
 offset_right = 576.0
