@@ -138,9 +138,9 @@ zoom = Vector2(4, 4)
 
 [node name="pause" parent="Pause" instance=ExtResource("4_8bqeo")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Upgrade" type="CanvasLayer" parent="."]
 
-[node name="powerup_menu" parent="CanvasLayer" instance=ExtResource("5_pw5e7")]
+[node name="powerup_menu" parent="Upgrade" instance=ExtResource("5_pw5e7")]
 
 [node name="Timer" type="Timer" parent="."]
 

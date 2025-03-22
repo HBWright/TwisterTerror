@@ -1,13 +1,102 @@
-[gd_scene load_steps=6 format=3 uid="uid://d24ex5rfkhyqk"]
+[gd_scene load_steps=17 format=3 uid="uid://d24ex5rfkhyqk"]
 
 [ext_resource type="Script" uid="uid://ci6grsow81d4j" path="res://scripts/powerup_menu.gd" id="1_okm8y"]
 [ext_resource type="Shader" uid="uid://8s63b8vpye2k" path="res://Shaders/blur.gdshader" id="2_faxy2"]
 [ext_resource type="Texture2D" uid="uid://gjhny13djrb" path="res://assets/buttons/background.png" id="3_faxy2"]
 [ext_resource type="Texture2D" uid="uid://cjcib3aohcx4" path="res://assets/buttons/skip.png" id="4_p71sp"]
+[ext_resource type="Texture2D" uid="uid://coiluutg83jru" path="res://assets/level-up.png" id="5_hwu4e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p71sp"]
 shader = ExtResource("2_faxy2")
 shader_parameter/lod = 1.154
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ftge"]
+atlas = ExtResource("5_hwu4e")
+region = Rect2(0, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uujcr"]
+atlas = ExtResource("5_hwu4e")
+region = Rect2(144, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htctp"]
+atlas = ExtResource("5_hwu4e")
+region = Rect2(288, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1d0ly"]
+atlas = ExtResource("5_hwu4e")
+region = Rect2(432, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66mhd"]
+atlas = ExtResource("5_hwu4e")
+region = Rect2(576, 0, 144, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp7tt"]
+atlas = ExtResource("5_hwu4e")
+region = Rect2(720, 0, 144, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yu0s1"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_3ftge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uujcr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htctp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1d0ly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66mhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp7tt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_hwu4e"]
+resource_name = "bounce"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.3),
+"transitions": PackedFloat32Array(1e-05, 1e-05),
+"update": 0,
+"values": [Vector2(578, 80), Vector2(578, 95)]
+}
+
+[sub_resource type="Animation" id="Animation_yu0s1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(578, 322)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bdp1k"]
+_data = {
+&"RESET": SubResource("Animation_yu0s1"),
+&"bounce": SubResource("Animation_hwu4e")
+}
 
 [node name="powerup_menu" type="Control"]
 process_mode = 3
@@ -82,6 +171,18 @@ focus_neighbor_left = NodePath("../Attack1")
 focus_neighbor_top = NodePath("../Attack2")
 focus_neighbor_right = NodePath("../Attack3")
 icon = ExtResource("4_p71sp")
+
+[node name="levelup" type="AnimatedSprite2D" parent="."]
+process_mode = 3
+texture_filter = 1
+position = Vector2(578, 322)
+scale = Vector2(4.90625, 4.90625)
+sprite_frames = SubResource("SpriteFrames_yu0s1")
+
+[node name="levelupbounce" type="AnimationPlayer" parent="levelup"]
+libraries = {
+&"": SubResource("AnimationLibrary_bdp1k")
+}
 
 [connection signal="pressed" from="Options/Attack1" to="." method="_on_attack_1_pressed"]
 [connection signal="pressed" from="Options/Attack2" to="." method="_on_attack_2_pressed"]

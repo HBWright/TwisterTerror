@@ -10,6 +10,8 @@ func resume():
 
 func upgrade_menu():
 	show()
+	$levelup.play()
+	$levelup/levelupbounce.play("bounce")
 	get_tree().paused = true
 	$Options/Attack1.grab_focus()
 	

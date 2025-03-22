@@ -268,6 +268,21 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="Animation" id="Animation_3ftge"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_uujcr"]
 resource_name = "spin"
 loop_mode = 1
@@ -282,21 +297,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(0.933033, 1),
 "update": 0,
 "values": [0.0, 1.5708]
-}
-
-[sub_resource type="Animation" id="Animation_3ftge"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_htctp"]
@@ -355,29 +355,29 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="Animation" id="Animation_xd0ga"]
+[sub_resource type="Animation" id="Animation_htctp"]
 resource_name = "levelupbounce"
 length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("levelup:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0.1, 0.3),
-"transitions": PackedFloat32Array(0.000333504, 0.000205297),
+"transitions": PackedFloat32Array(7.51432e-05, 1e-05),
 "update": 0,
-"values": [Vector2(578, 322), Vector2(578, 326)]
+"values": [Vector2(578, 322), Vector2(578, 307)]
 }
 
-[sub_resource type="Animation" id="Animation_q87iy"]
+[sub_resource type="Animation" id="Animation_1d0ly"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("levelup:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -387,10 +387,10 @@ tracks/0/keys = {
 "values": [Vector2(578, 322)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_rjalq"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_66mhd"]
 _data = {
-&"RESET": SubResource("Animation_q87iy"),
-&"levelupbounce": SubResource("Animation_xd0ga")
+&"RESET": SubResource("Animation_1d0ly"),
+&"levelupbounce": SubResource("Animation_htctp")
 }
 
 [node name="Control" type="Control"]
@@ -467,6 +467,7 @@ libraries = {
 }
 
 [node name="levelup" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 texture_filter = 1
 position = Vector2(578, 322)
 scale = Vector2(4.90625, 4.90625)
@@ -475,11 +476,23 @@ frame = 3
 frame_progress = 0.392424
 
 [node name="levelupbounce" type="AnimationPlayer" parent="levelup"]
-root_node = NodePath("../..")
 libraries = {
-&"": SubResource("AnimationLibrary_rjalq")
+&"": SubResource("AnimationLibrary_66mhd")
 }
 
 [node name="Death Timer" type="Timer" parent="."]
+
+[node name="timedisplay" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1041.0
+offset_top = 539.0
+offset_right = 1157.0
+offset_bottom = 562.0
+scale = Vector2(2, 2)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j5tnm")
+text = "00"
 
 [connection signal="timeout" from="Death Timer" to="." method="_on_death_timer_timeout"]
