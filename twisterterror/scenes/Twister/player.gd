@@ -1,12 +1,27 @@
 class_name Player_Overworld extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
+@onready var collision = $CollisionShape2D
+@onready var default_hurtbox = $Area2D/CollisionShape2D
+
 @export var speed : float = 100
 @export var accel : float = 10
 var direction : Vector2
 
 func _ready():
 	anim.play()
+	anim.scale = Vector2(1,1)
+	
+func _process(delta: float) -> void:
+	anim.scale.x = Global.player_size
+	anim.scale.y = Global.player_size
+	
+	collision.scale.x = Global.player_size
+	collision.scale.y = Global.player_size
+	collision.position.y = Global.player_collision_y
+	
+	default_hurtbox.scale.x = Global.player_size
+	default_hurtbox.scale.y = Global.player_size
 	
 func _physics_process(_delta: float) -> void:
 	direction.x = Input.get_axis("Left", "Right")

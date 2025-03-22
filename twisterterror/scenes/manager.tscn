@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bwfo8087fa3mm"]
+[gd_scene load_steps=37 format=3 uid="uid://bwfo8087fa3mm"]
 
 [ext_resource type="Texture2D" uid="uid://bxp3eo3whpam2" path="res://assets/angry general.png" id="1_bdh1m"]
 [ext_resource type="Script" uid="uid://vade0nfaxatu" path="res://scripts/manager.gd" id="1_gq280"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cflom3jtpq3w" path="res://assets/barempty.png" id="4_o1c0c"]
 [ext_resource type="Texture2D" uid="uid://myevyg33hd8s" path="res://assets/barfull.png" id="5_j5tnm"]
 [ext_resource type="Script" uid="uid://bnqw8tea5whhf" path="res://scripts/score.gd" id="6_cphvb"]
+[ext_resource type="FontFile" uid="uid://8uhqyflogrwk" path="res://assets/PIXEARG_.TTF" id="6_j5tnm"]
 [ext_resource type="Script" uid="uid://dixv0i0jl62cc" path="res://scripts/level.gd" id="7_o1c0c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smm52"]
@@ -279,8 +280,8 @@ texture_filter = 1
 position = Vector2(64, 584)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_thn8j")
-animation = &"weather"
-autoplay = "weather"
+animation = &"laughing"
+autoplay = "laughing"
 
 [node name="Report" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -290,7 +291,7 @@ texture = ExtResource("1_bdh1m")
 region_enabled = true
 region_rect = Rect2(0, 352, 96, 16)
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+[node name="xp_bar" type="TextureProgressBar" parent="."]
 texture_filter = 1
 layout_mode = 0
 offset_left = 144.0
@@ -298,6 +299,7 @@ offset_top = 8.0
 offset_right = 240.0
 offset_bottom = 48.0
 scale = Vector2(9, 9)
+rounded = true
 texture_under = ExtResource("3_cphvb")
 texture_over = ExtResource("4_o1c0c")
 texture_progress = ExtResource("5_j5tnm")
@@ -308,14 +310,20 @@ offset_left = 976.0
 offset_top = 592.0
 offset_right = 1120.0
 offset_bottom = 632.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("6_j5tnm")
 text = "Score : 99999"
 script = ExtResource("6_cphvb")
 
 [node name="Level" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 544.0
+offset_left = 533.0
 offset_top = 56.0
-offset_right = 704.0
+offset_right = 693.0
 offset_bottom = 120.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("6_j5tnm")
 text = "Level: 0"
 script = ExtResource("7_o1c0c")

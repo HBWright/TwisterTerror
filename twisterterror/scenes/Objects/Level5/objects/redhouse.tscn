@@ -1,11 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://kfa3ydqbbix7"]
+[gd_scene load_steps=4 format=3 uid="uid://kfa3ydqbbix7"]
 
 [ext_resource type="PackedScene" uid="uid://c2y0q28lbg2dr" path="res://scenes/Objects/Level5/base/level5.tscn" id="1_3igtb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gq1qw"]
+size = Vector2(80, 44)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3igtb"]
 size = Vector2(16, 50)
 
 [node name="level5" instance=ExtResource("1_3igtb")]
+
+[node name="CollisionShape2D" parent="Collider" index="0"]
+shape = SubResource("RectangleShape2D_gq1qw")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Collider" index="1"]
 position = Vector2(0, 17)

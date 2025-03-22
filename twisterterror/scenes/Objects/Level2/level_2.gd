@@ -1,6 +1,5 @@
 extends Area2D
 @onready var health = 20
-@onready var timer = $Timer
 @onready var damage_timer = $DamageTimer
 @onready var hurt_timer = $HurtAnimTimer
 @onready var hurt = $hurt
@@ -10,7 +9,8 @@ func take_damage(num):
 	if health == 0:
 		Global.score += 20
 		queue_free()
-		#add xp
+		Global.xp += 20
+		
 func _on_area_entered(area: Area2D) -> void:
 	if area is Area2D:
 		take_damage(Global.spin_damage)

@@ -12,6 +12,7 @@ func take_damage(num):
 	if health == 0:
 		Global.score += 10
 		queue_free()
+		Global.xp += 10
 
 func _on_area_entered(area: Area2D) -> void:
 	if area is Area2D:

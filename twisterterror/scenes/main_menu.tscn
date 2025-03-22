@@ -1,4 +1,103 @@
-[gd_scene format=3 uid="uid://bvcg64lskeyvn"]
+[gd_scene load_steps=21 format=3 uid="uid://bvcg64lskeyvn"]
+
+[ext_resource type="Script" uid="uid://dulcwdy6ju4ir" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bg5jtmnmdrgw3" path="res://assets/Twister_Blank-Sheet.png" id="2_wu84c"]
+[ext_resource type="Texture2D" uid="uid://cq4sgq8bdr7wn" path="res://assets/logo.png" id="3_8ln24"]
+[ext_resource type="Texture2D" uid="uid://dy3fkxoj8agg1" path="res://assets/buttons/play.png" id="4_oa1go"]
+[ext_resource type="Texture2D" uid="uid://dkqow28gvry6c" path="res://assets/buttons/controls.png" id="5_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://6cds6rvoo4w0" path="res://assets/buttons/credits.png" id="6_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://bvc8n8t6dg18h" path="res://assets/buttons/quit.png" id="7_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://gjhny13djrb" path="res://assets/buttons/background.png" id="8_5dd4i"]
+[ext_resource type="FontFile" uid="uid://8uhqyflogrwk" path="res://assets/PIXEARG_.TTF" id="9_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://42qxvj128qt5" path="res://assets/buttons/back.png" id="10_flqon"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtw2f"]
+atlas = ExtResource("2_wu84c")
+region = Rect2(0, 0, 1000, 1400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa1go"]
+atlas = ExtResource("2_wu84c")
+region = Rect2(1000, 0, 1000, 1400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbmy8"]
+atlas = ExtResource("2_wu84c")
+region = Rect2(2000, 0, 1000, 1400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jk1qb"]
+atlas = ExtResource("2_wu84c")
+region = Rect2(3000, 0, 1000, 1400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dd4i"]
+atlas = ExtResource("2_wu84c")
+region = Rect2(4000, 0, 1000, 1400)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgwnu"]
+atlas = ExtResource("2_wu84c")
+region = Rect2(5000, 0, 1000, 1400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_flqon"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtw2f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oa1go")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbmy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jk1qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dd4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgwnu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_bqqt6"]
+resource_name = "Logo Twist"
+length = 13.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Logo:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 3, 5, 6, 9, 10, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.0174533, -0.20944, -0.226893, 0.0, 0.0174533, 0.20944, 0.226893, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_wu84c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Logo:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ln24"]
+_data = {
+&"Logo Twist": SubResource("Animation_bqqt6"),
+&"RESET": SubResource("Animation_wu84c")
+}
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -7,3 +106,153 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bqqt6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0705882, 0.0941176, 0.129412, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 455)
+scale = Vector2(1.024, 0.555)
+sprite_frames = SubResource("SpriteFrames_flqon")
+frame = 4
+frame_progress = 0.614942
+
+[node name="Logo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(560, 160)
+scale = Vector2(4.84286, 4.84286)
+texture = ExtResource("3_8ln24")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8ln24")
+}
+
+[node name="Main" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Play" type="Button" parent="Main"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 128.0
+offset_top = 344.0
+offset_right = 274.0
+offset_bottom = 385.0
+rotation = -0.118682
+scale = Vector2(2, 2)
+focus_neighbor_right = NodePath("../Controlsbutton")
+focus_neighbor_bottom = NodePath("../Creditsbutton")
+icon = ExtResource("4_oa1go")
+
+[node name="Controlsbutton" type="Button" parent="Main"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 752.0
+offset_top = 320.0
+offset_right = 898.0
+offset_bottom = 361.0
+rotation = 0.237365
+scale = Vector2(2, 2)
+focus_neighbor_left = NodePath("../Play")
+focus_neighbor_bottom = NodePath("../Quit")
+icon = ExtResource("5_tbmy8")
+
+[node name="Creditsbutton" type="Button" parent="Main"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 152.0
+offset_top = 496.0
+offset_right = 298.0
+offset_bottom = 537.0
+rotation = 0.118682
+scale = Vector2(2, 2)
+focus_neighbor_top = NodePath("../Play")
+focus_neighbor_right = NodePath("../Quit")
+icon = ExtResource("6_jk1qb")
+
+[node name="Quit" type="Button" parent="Main"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 752.0
+offset_top = 536.0
+offset_right = 898.0
+offset_bottom = 577.0
+rotation = -0.118682
+scale = Vector2(2, 2)
+focus_neighbor_left = NodePath("../Creditsbutton")
+focus_neighbor_top = NodePath("../Controlsbutton")
+icon = ExtResource("7_5dd4i")
+
+[node name="Controls" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(577, 466)
+scale = Vector2(2.2029, 2.69697)
+texture = ExtResource("8_5dd4i")
+
+[node name="Controls" type="Label" parent="Controls"]
+texture_filter = 1
+offset_left = -51.296
+offset_top = -42.2697
+offset_right = 206.704
+offset_bottom = 129.73
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("9_lgwnu")
+theme_override_font_sizes/font_size = 16
+text = "W / Joystick Up = Up
+S / Joystick Down = Down
+A / Joystick Left = Left
+D / Joystick Right = Right
+K / Joypad A = Interact"
+
+[node name="Credits" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(577, 466)
+scale = Vector2(2.2029, 2.69697)
+texture = ExtResource("8_5dd4i")
+
+[node name="Credits" type="Label" parent="Credits"]
+texture_filter = 1
+offset_left = -62.0
+offset_top = -60.0
+offset_right = 246.0
+offset_bottom = 112.0
+scale = Vector2(0.4, 0.4)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("9_lgwnu")
+theme_override_font_sizes/font_size = 16
+text = "                 Made For :
+          MSU GAME DESIGN
+             GAME JAM 2025
+
+Art : Hayden Wright
+Programming : Hayden Wright
+Voice Acting : Hayden Wright"
+
+[node name="back" type="Button" parent="."]
+visible = false
+texture_filter = 1
+layout_mode = 0
+offset_left = 456.0
+offset_top = 544.0
+offset_right = 602.0
+offset_bottom = 585.0
+scale = Vector2(1.7, 1.7)
+icon = ExtResource("10_flqon")
+
+[connection signal="pressed" from="Main/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Main/Controlsbutton" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="Main/Creditsbutton" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Main/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

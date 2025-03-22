@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://d24ex5rfkhyqk"]
+
+[ext_resource type="Script" uid="uid://ci6grsow81d4j" path="res://scripts/powerup_menu.gd" id="1_okm8y"]
+[ext_resource type="Shader" uid="uid://8s63b8vpye2k" path="res://Shaders/blur.gdshader" id="2_faxy2"]
+[ext_resource type="Texture2D" uid="uid://gjhny13djrb" path="res://assets/buttons/background.png" id="3_faxy2"]
+[ext_resource type="Texture2D" uid="uid://cjcib3aohcx4" path="res://assets/buttons/skip.png" id="4_p71sp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p71sp"]
+shader = ExtResource("2_faxy2")
+shader_parameter/lod = 1.154
+
+[node name="powerup_menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_okm8y")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_p71sp")
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Options" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Attack1" type="Button" parent="Options"]
+texture_filter = 1
+offset_left = 160.0
+offset_top = 168.0
+offset_right = 306.0
+offset_bottom = 308.0
+scale = Vector2(1.3, 2.3)
+focus_neighbor_left = NodePath("../Attack3")
+focus_neighbor_right = NodePath("../Attack2")
+focus_neighbor_bottom = NodePath("../Skip")
+icon = ExtResource("3_faxy2")
+
+[node name="Attack2" type="Button" parent="Options"]
+texture_filter = 1
+offset_left = 480.0
+offset_top = 168.0
+offset_right = 626.0
+offset_bottom = 308.0
+scale = Vector2(1.3, 2.3)
+focus_neighbor_left = NodePath("../Attack1")
+focus_neighbor_right = NodePath("../Attack3")
+focus_neighbor_bottom = NodePath("../Skip")
+icon = ExtResource("3_faxy2")
+
+[node name="Attack3" type="Button" parent="Options"]
+texture_filter = 1
+offset_left = 800.0
+offset_top = 168.0
+offset_right = 946.0
+offset_bottom = 308.0
+scale = Vector2(1.3, 2.3)
+focus_neighbor_left = NodePath("../Attack2")
+focus_neighbor_right = NodePath("../Attack1")
+focus_neighbor_bottom = NodePath("../Skip")
+icon = ExtResource("3_faxy2")
+
+[node name="Skip" type="Button" parent="Options"]
+texture_filter = 1
+offset_left = 430.0
+offset_top = 520.0
+offset_right = 576.0
+offset_bottom = 561.0
+scale = Vector2(2, 2)
+focus_neighbor_left = NodePath("../Attack1")
+focus_neighbor_top = NodePath("../Attack2")
+focus_neighbor_right = NodePath("../Attack3")
+icon = ExtResource("4_p71sp")
+
+[connection signal="pressed" from="Options/Attack1" to="." method="_on_attack_1_pressed"]
+[connection signal="pressed" from="Options/Attack2" to="." method="_on_attack_2_pressed"]
+[connection signal="pressed" from="Options/Attack3" to="." method="_on_attack_3_pressed"]
+[connection signal="pressed" from="Options/Skip" to="." method="_on_skip_pressed"]
