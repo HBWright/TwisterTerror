@@ -1,8 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://csmatrfvd3js3"]
+[gd_scene load_steps=32 format=3 uid="uid://csmatrfvd3js3"]
 
 [ext_resource type="Texture2D" uid="uid://dr7mh5e8wbxsi" path="res://assets/Twister-Sheet.png" id="1_p0vlq"]
 [ext_resource type="Script" uid="uid://bss176xf2gjjq" path="res://scenes/Twister/player.gd" id="1_v6fml"]
 [ext_resource type="PackedScene" uid="uid://bwfo8087fa3mm" path="res://scenes/manager.tscn" id="3_3li8b"]
+[ext_resource type="Texture2D" uid="uid://ct6ejh0nydqgp" path="res://assets/Twister Death-Sheet.png" id="3_kw3xf"]
 [ext_resource type="PackedScene" uid="uid://dbfv50atc2q2s" path="res://scenes/pause.tscn" id="4_8bqeo"]
 [ext_resource type="PackedScene" uid="uid://d24ex5rfkhyqk" path="res://scenes/powerup_menu.tscn" id="5_pw5e7"]
 
@@ -54,6 +55,46 @@ region = Rect2(128, 32, 32, 32)
 atlas = ExtResource("1_p0vlq")
 region = Rect2(160, 32, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_3t6os"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sexv"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_diqgx"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uk0q8"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cr0cy"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okbtb"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbvrx"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjow6"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fn5gp"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rn86"]
+atlas = ExtResource("3_kw3xf")
+region = Rect2(288, 0, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_d6rpx"]
 animations = [{
 "frames": [{
@@ -101,6 +142,41 @@ animations = [{
 "loop": true,
 "name": &"Twister-Damaged",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3t6os")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sexv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_diqgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uk0q8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cr0cy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okbtb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbvrx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjow6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fn5gp")
+}, {
+"duration": 12.0,
+"texture": SubResource("AtlasTexture_5rn86")
+}],
+"loop": true,
+"name": &"Twister-Death",
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r3kul"]
@@ -109,7 +185,7 @@ size = Vector2(20, 28)
 [sub_resource type="CircleShape2D" id="CircleShape2D_jatw7"]
 radius = 46.0435
 
-[node name="Twister" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_v6fml")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -117,12 +193,14 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_d6rpx")
 animation = &"Twister"
 autoplay = "Twister"
+frame_progress = 0.286955
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_r3kul")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["player"]]
+collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_jatw7")
@@ -139,9 +217,8 @@ zoom = Vector2(4, 4)
 [node name="pause" parent="Pause" instance=ExtResource("4_8bqeo")]
 
 [node name="Upgrade" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="powerup_menu" parent="Upgrade" instance=ExtResource("5_pw5e7")]
-
-[node name="Timer" type="Timer" parent="."]
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

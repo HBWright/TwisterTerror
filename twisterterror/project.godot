@@ -13,11 +13,19 @@ config_version=5
 config/name="TwisterTerror"
 run/main_scene="uid://bvcg64lskeyvn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://q3ffdhhdnx5g"
 
 [autoload]
 
 Global="*res://scripts/globals.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[global_group]
+
+player=""
 
 [input]
 
@@ -96,6 +104,12 @@ Pause={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Missile"
+2d_physics/layer_3="Objects"
 
 [rendering]
 

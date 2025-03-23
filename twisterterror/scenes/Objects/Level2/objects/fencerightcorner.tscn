@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ulctsrnas5k8"]
+
+[ext_resource type="PackedScene" uid="uid://djlib1up74tjk" path="res://scenes/Objects/Level2/level_2.tscn" id="1_kvao0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvao0"]
+size = Vector2(16, 14)
+
+[node name="level_2" instance=ExtResource("1_kvao0")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(336, 256, 16, 16)
+
+[node name="Hurtbox" parent="." index="2"]
+shape = SubResource("RectangleShape2D_kvao0")

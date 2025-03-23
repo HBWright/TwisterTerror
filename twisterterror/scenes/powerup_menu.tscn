@@ -60,6 +60,21 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="Animation" id="Animation_yu0s1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(578, 80)]
+}
+
 [sub_resource type="Animation" id="Animation_hwu4e"]
 resource_name = "bounce"
 length = 0.4
@@ -75,21 +90,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1e-05, 1e-05),
 "update": 0,
 "values": [Vector2(578, 80), Vector2(578, 95)]
-}
-
-[sub_resource type="Animation" id="Animation_yu0s1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(578, 322)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bdp1k"]
@@ -175,7 +175,7 @@ icon = ExtResource("4_p71sp")
 [node name="levelup" type="AnimatedSprite2D" parent="."]
 process_mode = 3
 texture_filter = 1
-position = Vector2(578, 322)
+position = Vector2(578, 80)
 scale = Vector2(4.90625, 4.90625)
 sprite_frames = SubResource("SpriteFrames_yu0s1")
 

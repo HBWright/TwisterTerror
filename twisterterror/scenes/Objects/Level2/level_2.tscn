@@ -88,6 +88,7 @@ offset_top = -19.0
 offset_right = 22.0
 offset_bottom = 21.0
 color = Color(0.764706, 0.219608, 0.27451, 0)
+metadata/_edit_use_anchors_ = true
 
 [node name="Collider" type="StaticBody2D" parent="."]
 

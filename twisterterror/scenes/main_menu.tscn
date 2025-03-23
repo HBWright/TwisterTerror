@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bvcg64lskeyvn"]
+[gd_scene load_steps=22 format=3 uid="uid://bvcg64lskeyvn"]
 
 [ext_resource type="Script" uid="uid://dulcwdy6ju4ir" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://bg5jtmnmdrgw3" path="res://assets/Twister_Blank-Sheet.png" id="2_wu84c"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://gjhny13djrb" path="res://assets/buttons/background.png" id="8_5dd4i"]
 [ext_resource type="FontFile" uid="uid://8uhqyflogrwk" path="res://assets/PIXEARG_.TTF" id="9_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://42qxvj128qt5" path="res://assets/buttons/back.png" id="10_flqon"]
+[ext_resource type="AudioStream" uid="uid://cjjf4rc47bxll" path="res://assets/audio/512380__mrthenoronha__bass-line-theme-loop-3.ogg" id="11_lgwnu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rtw2f"]
 atlas = ExtResource("2_wu84c")
@@ -190,6 +191,55 @@ focus_neighbor_left = NodePath("../Creditsbutton")
 focus_neighbor_top = NodePath("../Controlsbutton")
 icon = ExtResource("7_5dd4i")
 
+[node name="instructions" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(592, 448)
+scale = Vector2(3.94203, 3.0303)
+texture = ExtResource("8_5dd4i")
+
+[node name="play" type="Button" parent="instructions"]
+offset_left = -43.0473
+offset_top = 38.4313
+offset_right = 102.953
+offset_bottom = 79.4313
+scale = Vector2(0.6, 0.6)
+icon = ExtResource("4_oa1go")
+
+[node name="Label" type="Label" parent="instructions"]
+offset_left = -34.9502
+offset_top = -62.2188
+offset_right = 105.05
+offset_bottom = -39.2188
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("9_lgwnu")
+text = "BE THE CRISIS"
+
+[node name="Label2" type="Label" parent="instructions"]
+offset_left = -73.5661
+offset_top = -50.5175
+offset_right = 422.434
+offset_bottom = 246.482
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("9_lgwnu")
+text = "Wreck havoc across the small island!
+Tear down trees, smash fences 
+and cars, and grow in size and power.
+
+You'll dissipate if you don't cause enough 
+destruction and level up in time.
+Different structures have different
+levels of health so be wary what you
+spend time on.
+
+Cause enough trouble.. and the crazed
+General will show up with serious firepower..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Controls" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
@@ -212,7 +262,8 @@ text = "W / Joystick Up = Up
 S / Joystick Down = Down
 A / Joystick Left = Left
 D / Joystick Right = Right
-K / Joypad A = Interact"
+K / Joypad A = Interact
+esc / Joypad Start = Pause"
 
 [node name="Credits" type="Sprite2D" parent="."]
 visible = false
@@ -238,7 +289,8 @@ text = "                 Made For :
 
 Art : Hayden Wright
 Programming : Hayden Wright
-Voice Acting : Hayden Wright"
+Voice Acting : Hayden Wright
+Sound Effects : Mrthenoronha"
 
 [node name="back" type="Button" parent="."]
 visible = false
@@ -251,8 +303,15 @@ offset_bottom = 585.0
 scale = Vector2(1.7, 1.7)
 icon = ExtResource("10_flqon")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_lgwnu")
+volume_db = -7.498
+autoplay = true
+parameters/looping = true
+
 [connection signal="pressed" from="Main/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Main/Controlsbutton" to="." method="_on_controls_pressed"]
 [connection signal="pressed" from="Main/Creditsbutton" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Main/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="instructions/play" to="." method="_on_play2_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

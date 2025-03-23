@@ -4,12 +4,16 @@ extends Control
 @onready var logo = $AnimationPlayer
 
 func _ready() -> void:
+	
 	$Main/Play.grab_focus()
 	anim.play()
 	logo.play("Logo Twist")
 	
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/town.tscn")
+	$Main.visible = false
+	$instructions.visible=true
+	$instructions/play.grab_focus()
+	logo.play("RESET")
 	
 func _on_controls_pressed() -> void:
 	$Main.visible = false
@@ -32,3 +36,7 @@ func _on_back_pressed() -> void:
 	$Controls.visible = false
 	$back.visible = false
 	$Main/Play.grab_focus()
+
+
+func _on_play2_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/town.tscn")

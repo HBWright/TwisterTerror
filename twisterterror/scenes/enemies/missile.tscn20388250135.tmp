@@ -1,0 +1,167 @@
+[gd_scene load_steps=18 format=3 uid="uid://ea7v76bcsf6h"]
+
+[ext_resource type="Script" uid="uid://crf2drxts4gwl" path="res://scripts/missile.gd" id="1_qigsf"]
+[ext_resource type="Texture2D" uid="uid://dbwshnb5bxodl" path="res://assets/missile.png" id="2_kimve"]
+[ext_resource type="Texture2D" uid="uid://bqt48eg68g5et" path="res://assets/explosion.png" id="3_17p7i"]
+[ext_resource type="Script" uid="uid://cn75ghptnofrn" path="res://follow_player.gd" id="4_kimve"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_su343"]
+size = Vector2(54, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6opch"]
+atlas = ExtResource("2_kimve")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc0c7"]
+atlas = ExtResource("2_kimve")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80xx3"]
+atlas = ExtResource("2_kimve")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sn362"]
+atlas = ExtResource("3_17p7i")
+region = Rect2(0, 0, 47, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0p8y"]
+atlas = ExtResource("3_17p7i")
+region = Rect2(47, 0, 47, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82ob3"]
+atlas = ExtResource("3_17p7i")
+region = Rect2(94, 0, 47, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8l4ds"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6opch")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc0c7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80xx3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sn362")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0p8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82ob3")
+}],
+"loop": true,
+"name": &"explode",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kimve"]
+size = Vector2(40, 18)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_17p7i"]
+radius = 376.085
+
+[sub_resource type="Animation" id="Animation_kimve"]
+resource_name = "hurt"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.764706, 0.219608, 0.27451, 0.8), Color(1, 1, 1, 0.890196)]
+}
+
+[sub_resource type="Animation" id="Animation_17p7i"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_17p7i"]
+_data = {
+&"RESET": SubResource("Animation_17p7i"),
+&"hurt": SubResource("Animation_kimve")
+}
+
+[node name="missile" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_qigsf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 16)
+shape = SubResource("RectangleShape2D_su343")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+clip_children = 2
+texture_filter = 1
+position = Vector2(32, 16)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_8l4ds")
+frame_progress = 0.960132
+
+[node name="ColorRect" type="ColorRect" parent="AnimatedSprite2D"]
+offset_left = -12.8
+offset_top = -6.4
+offset_right = 51.2
+offset_bottom = 33.6
+color = Color(1, 1, 1, 0)
+
+[node name="follow_player" type="Node" parent="."]
+script = ExtResource("4_kimve")
+metadata/_custom_type_script = "uid://cn75ghptnofrn"
+
+[node name="HurtZone" type="Area2D" parent="."]
+light_mask = 0
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtZone"]
+position = Vector2(37, 15)
+shape = SubResource("RectangleShape2D_kimve")
+
+[node name="Detect" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detect"]
+visible = false
+position = Vector2(32, 16)
+shape = SubResource("CircleShape2D_17p7i")
+
+[node name="DamageTimer" type="Timer" parent="."]
+
+[node name="HurtAnimTimer" type="Timer" parent="."]
+
+[node name="hurt" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_17p7i")
+}
+
+[connection signal="area_entered" from="HurtZone" to="." method="_on_hurt_zone_area_entered"]
+[connection signal="area_exited" from="HurtZone" to="." method="_on_hurt_zone_area_exited"]
+[connection signal="body_entered" from="Detect" to="follow_player" method="_on_detect_body_entered"]
+[connection signal="timeout" from="DamageTimer" to="." method="_on_damage_timer_timeout"]
+[connection signal="timeout" from="HurtAnimTimer" to="." method="_on_hurt_anim_timer_timeout"]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx1gnlgw8p34u"]
+
+[ext_resource type="PackedScene" uid="uid://c401fx751kvly" path="res://scenes/Objects/Level3/level_3.tscn" id="1_vk7n3"]
+
+[node name="level_3" instance=ExtResource("1_vk7n3")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(336, 288, 48, 16)

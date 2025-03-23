@@ -9,13 +9,13 @@ func _ready():
 
 func take_damage(num):
 	health -= num
-	if health == 0:
+	if health <= 0:
 		Global.score += 10
 		queue_free()
 		Global.xp += 10
 
 func _on_area_entered(area: Area2D) -> void:
-	if area is Area2D:
+	if area.is_in_group("player"):
 		take_damage(Global.spin_damage)
 		hurt.play("hurtEffect")
 		print(health)
@@ -23,7 +23,7 @@ func _on_area_entered(area: Area2D) -> void:
 		hurt_timer.start()
 	
 func _on_area_exited(area: Area2D) -> void:
-	if area is Area2D:
+	if area.is_in_group("player"):
 		damage_timer.stop()
 		
 func _on_damage_timer_timeout() -> void:
