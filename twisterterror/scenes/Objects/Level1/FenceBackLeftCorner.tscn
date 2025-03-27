@@ -13,3 +13,6 @@ region_rect = Rect2(256, 224, 16, 16)
 [node name="Hitbox" parent="." index="2"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_ulqwb")
+
+[node name="damage_taken" parent="." index="6"]
+visible = true

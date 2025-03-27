@@ -9,6 +9,7 @@ func _ready():
 
 func take_damage(num):
 	health -= num
+	$damage_taken.visible = true
 	if health <= 0:
 		Global.score += 50
 		queue_free()
@@ -35,3 +36,4 @@ func _on_damage_timer_timeout() -> void:
 	
 func _on_hurt_anim_timer_timeout() -> void:
 	hurt.play("RESET")
+	$damage_taken.visible = false

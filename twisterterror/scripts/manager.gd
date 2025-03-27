@@ -52,13 +52,13 @@ func level_up():
 		anim.play("talking")
 		await get_tree().create_timer(2).timeout
 		idle_gen()
-	elif Global.level <= 10:
+	elif Global.level <= 14:
 		Global.spin_damage = 7
 		Global.level10.emit()
 		anim.play("screaming")
 		await get_tree().create_timer(2).timeout
 		idle_gen()
-	elif Global.level <= 15:
+	elif Global.level >= 15:
 		Global.spin_damage = 8
 		Global.level15.emit()
 		anim.play("furious")
@@ -118,4 +118,4 @@ func idle_gen():
 	elif Global.level <= 14:
 		anim.play("screaming_idle")
 	else:
-		anim.play("furios_idle")
+		anim.play("furious_idle")

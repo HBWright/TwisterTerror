@@ -15,6 +15,7 @@ func _process(delta: float) -> void:
 
 func take_damage(num):
 	health -= num
+	$damage_taken.visible = true
 	if health <= 0:
 		queue_free()
 		Global.sadgen.emit()
@@ -39,6 +40,7 @@ func _on_damage_timer_timeout() -> void:
 
 func _on_hurt_anim_timer_timeout() -> void:
 	hurt.play("RESET")
+	$damage_taken.visible = false
 
 func _on_hurt_zone_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
@@ -46,6 +48,7 @@ func _on_hurt_zone_body_entered(body: Node2D) -> void:
 		$hurt.play("RESET")
 		$Detect/CollisionShape2D.disabled = true
 		$HurtZone/CollisionShape2D.disabled = true
+		rotation=0
 		$Seconds.visible = true
 		$AnimatedSprite2D.play("explode")
 		$AudioStreamPlayer2D.play()

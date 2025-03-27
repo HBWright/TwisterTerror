@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://djlib1up74tjk"]
+[gd_scene load_steps=10 format=3 uid="uid://djlib1up74tjk"]
 
 [ext_resource type="Script" uid="uid://47jjcpjs8gos" path="res://scenes/Objects/Level2/level_2.gd" id="1_vkrom"]
 [ext_resource type="Texture2D" uid="uid://bi10emnb11yu4" path="res://assets/tilemap.png" id="2_bnh3q"]
+[ext_resource type="FontFile" uid="uid://8uhqyflogrwk" path="res://assets/PIXEARG_.TTF" id="3_77u1t"]
+[ext_resource type="Script" uid="uid://dlbelcubqf30e" path="res://scripts/damage_taken.gd" id="4_8dfpq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_77u1t"]
 size = Vector2(30, 10)
@@ -107,6 +109,20 @@ shape = SubResource("RectangleShape2D_8dfpq")
 libraries = {
 &"": SubResource("AnimationLibrary_2fj32")
 }
+
+[node name="damage_taken" type="RichTextLabel" parent="."]
+visible = false
+texture_filter = 1
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 17.0
+offset_bottom = 33.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/default_color = Color(0.862745, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("3_77u1t")
+text = "-1"
+script = ExtResource("4_8dfpq")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

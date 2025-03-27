@@ -238,7 +238,7 @@ sources/0 = SubResource("TileSetAtlasSource_1jyyf")
 
 [sub_resource type="Curve2D" id="Curve2D_6yl6j"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 192, -116, 0, 0, 0, 0, -176, -116, 0, 0, 0, 0, -184, 116, 0, 0, 0, 0, 192, 116, 0, 0, 0, 0, 192, -116)
+"points": PackedVector2Array(0, 0, 0, 0, 472, -308, 0, 0, 0, 0, -456, -308, 0, 0, 0, 0, -456, 340, 0, 0, 0, 0, 480, 356, 0, 0, 0, 0, 472, -308)
 }
 point_count = 5
 
@@ -265,2197 +265,2190 @@ position = Vector2(472, -188)
 curve = SubResource("Curve2D_6yl6j")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
-position = Vector2(192, -116)
+position = Vector2(472, -308)
 rotation = 3.14159
 
 [node name="Marker2D" type="Marker2D" parent="Player/Path2D/PathFollow2D"]
 
-[node name="Objects1" type="Node" parent="."]
+[node name="objects" type="Node2D" parent="."]
+y_sort_enabled = true
 
-[node name="Level 1" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="level5" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(-64, -160)
+
+[node name="level_3" parent="objects" instance=ExtResource("14_b0eaf")]
+position = Vector2(-32, -96)
+
+[node name="level_2" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(232, -96)
+
+[node name="level6" parent="objects" instance=ExtResource("13_0havn")]
+position = Vector2(288, -152)
+
+[node name="level7" parent="objects" instance=ExtResource("14_ov17k")]
+position = Vector2(304, -424)
+
+[node name="level_4" parent="objects" instance=ExtResource("15_2dnfj")]
+position = Vector2(368, -368)
+
+[node name="level8" parent="objects" instance=ExtResource("13_0havn")]
+position = Vector2(656, -440)
+
+[node name="level9" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(-416, -424)
+
+[node name="level_5" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-472, -352)
+
+[node name="level_6" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-376, -352)
+
+[node name="level_7" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-472, -304)
+
+[node name="level_8" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-376, -304)
+
+[node name="level_9" parent="objects" instance=ExtResource("17_8m6oo")]
+position = Vector2(-528, -384)
+
+[node name="level_10" parent="objects" instance=ExtResource("17_8m6oo")]
+position = Vector2(-80, 160)
+
+[node name="level_11" parent="objects" instance=ExtResource("18_uvrjk")]
+position = Vector2(80, 160)
+
+[node name="level_12" parent="objects" instance=ExtResource("15_2dnfj")]
+position = Vector2(-32, 128)
+
+[node name="level_13" parent="objects" instance=ExtResource("15_2dnfj")]
+position = Vector2(48, 96)
+
+[node name="level_14" parent="objects" instance=ExtResource("14_b0eaf")]
+position = Vector2(96, 96)
+
+[node name="level_15" parent="objects" instance=ExtResource("14_b0eaf")]
+position = Vector2(-80, 96)
+
+[node name="level_16" parent="objects" instance=ExtResource("12_b0eaf")]
+position = Vector2(-256, 336)
+
+[node name="level_17" parent="objects" instance=ExtResource("12_b0eaf")]
+position = Vector2(-80, 336)
+
+[node name="level_18" parent="objects" instance=ExtResource("12_b0eaf")]
+position = Vector2(-128, 400)
+
+[node name="level_19" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-256, 400)
+
+[node name="level_20" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-208, 400)
+
+[node name="level_21" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-256, 448)
+
+[node name="level_22" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-208, 448)
+
+[node name="level_23" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-208, 336)
+
+[node name="level_24" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-128, 336)
+
+[node name="level_25" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-80, 400)
+
+[node name="level_26" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-128, 448)
+
+[node name="level_27" parent="objects" instance=ExtResource("13_uutfq")]
+position = Vector2(-80, 448)
+
+[node name="level10" parent="objects" instance=ExtResource("14_ov17k")]
+position = Vector2(-528, -200)
+
+[node name="level11" parent="objects" instance=ExtResource("13_0havn")]
+position = Vector2(-864, -424)
+
+[node name="level_28" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-920, -368)
+
+[node name="level_29" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-904, -272)
+
+[node name="level_30" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-840, -272)
+
+[node name="level_31" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-632, 96)
+
+[node name="level_32" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-552, 96)
+
+[node name="level12" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(-576, 216)
+
+[node name="level13" parent="objects" instance=ExtResource("21_qflhy")]
+position = Vector2(-592, 56)
+
+[node name="level14" parent="objects" instance=ExtResource("14_ov17k")]
+position = Vector2(-416, 104)
+
+[node name="level15" parent="objects" instance=ExtResource("21_qflhy")]
+position = Vector2(-752, 312)
+
+[node name="level_33" parent="objects" instance=ExtResource("18_uvrjk")]
+position = Vector2(-688, 368)
+
+[node name="level_34" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-856, 432)
+
+[node name="level_35" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-712, 432)
+
+[node name="level_36" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-648, 432)
+
+[node name="level_37" parent="objects" instance=ExtResource("17_8m6oo")]
+position = Vector2(-816, 592)
+
+[node name="level16" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(-704, 552)
+
+[node name="level17" parent="objects" instance=ExtResource("13_0havn")]
+position = Vector2(-288, 744)
+
+[node name="level18" parent="objects" instance=ExtResource("13_0havn")]
+position = Vector2(-48, 744)
+
+[node name="level_38" parent="objects" instance=ExtResource("18_uvrjk")]
+position = Vector2(-336, 784)
+
+[node name="level_39" parent="objects" instance=ExtResource("14_b0eaf")]
+position = Vector2(336, 912)
+
+[node name="level19" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(400, 872)
+
+[node name="level20" parent="objects" instance=ExtResource("21_qflhy")]
+position = Vector2(608, 872)
+
+[node name="level_40" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(472, 896)
+
+[node name="level_41" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(424, 960)
+
+[node name="level_42" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(536, 896)
+
+[node name="level_43" parent="objects" instance=ExtResource("18_uvrjk")]
+position = Vector2(672, 928)
+
+[node name="level_44" parent="objects" instance=ExtResource("14_b0eaf")]
+position = Vector2(288, 416)
+
+[node name="level21" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(224, 360)
+
+[node name="level22" parent="objects" instance=ExtResource("21_qflhy")]
+position = Vector2(384, 520)
+
+[node name="level_45" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(360, 576)
+
+[node name="level_46" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(168, 400)
+
+[node name="level23" parent="objects" instance=ExtResource("9_uutfq")]
+position = Vector2(624, 552)
+
+[node name="level_47" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(408, -304)
+
+[node name="level_48" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(344, -304)
+
+[node name="level_49" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(200, -304)
+
+[node name="level_50" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-760, 624)
+
+[node name="level_51" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-664, 624)
+
+[node name="level_52" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-664, 672)
+
+[node name="level_54" parent="objects" instance=ExtResource("15_5qoex")]
+position = Vector2(-680, 320)
+
+[node name="level_55" parent="objects" instance=ExtResource("14_f72b0")]
+position = Vector2(-600, 560)
+
+[node name="level_56" parent="objects" instance=ExtResource("14_f72b0")]
+position = Vector2(-824, 560)
+
+[node name="level_57" parent="objects" instance=ExtResource("12_uvrjk")]
+position = Vector2(24, 752)
+
+[node name="level_58" parent="objects" instance=ExtResource("14_f72b0")]
+position = Vector2(696, 560)
+
+[node name="level_59" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-352, -56)
+
+[node name="level_60" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-288, -136)
+
+[node name="level_61" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-352, -168)
+
+[node name="level_62" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-176, -88)
+
+[node name="level_63" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-80, -232)
+
+[node name="level_64" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-160, -280)
+
+[node name="level_65" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(16, -344)
+
+[node name="level_66" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-80, -392)
+
+[node name="level_67" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(64, -264)
+
+[node name="level_68" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(576, -264)
+
+[node name="level_69" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(720, -296)
+
+[node name="level_70" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(720, -168)
+
+[node name="level_71" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(624, -120)
+
+[node name="level_72" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(432, -56)
+
+[node name="level_73" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(560, 56)
+
+[node name="level_74" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(704, -40)
+
+[node name="level_75" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(400, 72)
+
+[node name="level_76" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(304, 56)
+
+[node name="level_77" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(192, 88)
+
+[node name="level_78" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(304, 152)
+
+[node name="level_79" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(224, 216)
+
+[node name="level_80" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(416, 248)
+
+[node name="level_81" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(432, 152)
+
+[node name="level_82" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(544, 280)
+
+[node name="level_83" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(624, 184)
+
+[node name="level_84" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(688, 136)
+
+[node name="level_85" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(672, 328)
+
+[node name="level_86" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(672, 440)
+
+[node name="level_87" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(576, 472)
+
+[node name="level_88" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(448, 488)
+
+[node name="level_89" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(400, 408)
+
+[node name="level_90" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(304, 312)
+
+[node name="level_91" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(448, 328)
+
+[node name="level_92" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(176, 296)
+
+[node name="level_93" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-128, 248)
+
+[node name="level_94" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(48, 360)
+
+[node name="level_95" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(32, 264)
+
+[node name="level_96" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-224, 248)
+
+[node name="level_97" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-384, 264)
+
+[node name="level_98" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-320, 216)
+
+[node name="level_99" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-240, 136)
+
+[node name="level_100" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-600, 321)
+
+[node name="level_101" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-128, 40)
+
+[node name="level_102" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-96, 648)
+
+[node name="level_103" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-160, 536)
+
+[node name="level_104" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(0, 536)
+
+[node name="level_105" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(144, 488)
+
+[node name="level_106" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(128, 680)
+
+[node name="level_107" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(144, 760)
+
+[node name="level_108" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(272, 744)
+
+[node name="level_109" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(416, 664)
+
+[node name="level_110" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(416, 824)
+
+[node name="level_111" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(576, 808)
+
+[node name="level_112" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(608, 680)
+
+[node name="level_113" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(688, 792)
+
+[node name="level_114" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(224, 856)
+
+[node name="level_115" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(112, 872)
+
+[node name="level_116" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(328, 968)
+
+[node name="level_117" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(160, 984)
+
+[node name="level_118" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(560, 968)
+
+[node name="level_119" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(656, 968)
+
+[node name="level_120" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-288, 920)
+
+[node name="level_121" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-176, 904)
+
+[node name="level_122" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-240, 1000)
+
+[node name="level_123" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-240, 824)
+
+[node name="level_124" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-96, 840)
+
+[node name="level_125" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-32, 888)
+
+[node name="level_126" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-64, 968)
+
+[node name="level_127" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-368, 680)
+
+[node name="level_128" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-480, 840)
+
+[node name="level_129" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-432, 968)
+
+[node name="level_130" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-528, 968)
+
+[node name="level_131" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-640, 984)
+
+[node name="level_132" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-624, 808)
+
+[node name="level_133" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-752, 888)
+
+[node name="level_134" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-832, 824)
+
+[node name="level_135" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-912, 888)
+
+[node name="level_136" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-840, 952)
+
+[node name="level_137" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-992, 952)
+
+[node name="level_138" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-976, 776)
+
+[node name="level_139" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-832, 664)
+
+[node name="level_140" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-608, 664)
+
+[node name="level_141" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-992, 600)
+
+[node name="level_142" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-976, 392)
+
+[node name="level_143" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-944, 232)
+
+[node name="level_144" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-800, 248)
+
+[node name="level_145" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-672, 168)
+
+[node name="level_146" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-864, 104)
+
+[node name="level_147" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-992, 40)
+
+[node name="level_148" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-992, -72)
+
+[node name="level_149" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-928, -24)
+
+[node name="level_150" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-784, -88)
+
+[node name="level_151" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-672, -72)
+
+[node name="level_152" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-576, -72)
+
+[node name="level_153" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-608, -152)
+
+[node name="level_154" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-736, -216)
+
+[node name="level_155" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-496, -56)
+
+[node name="level_156" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-480, 40)
+
+[node name="level_157" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-464, 200)
+
+[node name="level_158" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-416, 392)
+
+[node name="level_159" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-352, 488)
+
+[node name="level_160" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-400, 520)
+
+[node name="level_161" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-944, -200)
+
+[node name="level_162" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-688, -312)
+
+[node name="level_163" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-544, -312)
+
+[node name="level_164" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-320, -312)
+
+[node name="level_165" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(128, -183)
+
+[node name="level_166" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(64, 40)
+
+[node name="Level 1" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-736, 464)
+
+[node name="Level 2" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-720, 464)
+
+[node name="Level 3" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-704, 464)
+
+[node name="Level 4" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-688, 464)
+
+[node name="Level 5" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-672, 464)
+
+[node name="Level 6" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-656, 464)
+
+[node name="Level 7" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-640, 464)
+
+[node name="Level 8" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-624, 464)
+
+[node name="Level 9" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-752, 448)
+
+[node name="Level 10" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-752, 432)
+
+[node name="Level 11" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(-608, 464)
+
+[node name="Level 12" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(-752, 464)
+
+[node name="Level 13" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 448)
+
+[node name="Level 14" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 432)
+
+[node name="Level 15" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 416)
+
+[node name="Level 16" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 400)
+
+[node name="Level 17" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 384)
+
+[node name="Level 18" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 368)
+
+[node name="Level 19" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-608, 352)
+
+[node name="Level 20" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(-608, 336)
+
+[node name="Level 21" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 768)
+
+[node name="Level 22" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 752)
+
+[node name="Level 23" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 736)
+
+[node name="Level 24" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 720)
+
+[node name="Level 25" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 704)
+
+[node name="Level 26" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 688)
+
+[node name="Level 27" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 672)
+
+[node name="Level 28" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 656)
+
+[node name="Level 29" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-144, 640)
+
+[node name="Level 30" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 688)
+
+[node name="Level 31" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 672)
+
+[node name="Level 32" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 656)
+
+[node name="Level 33" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 640)
+
+[node name="Level 34" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 768)
+
+[node name="Level 35" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 752)
+
+[node name="Level 36" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 736)
+
+[node name="Level 37" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 720)
+
+[node name="Level 38" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-192, 704)
+
+[node name="Level 39" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(135, 432)
+
+[node name="Level 40" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(135, 416)
+
+[node name="Level 41" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(135, 400)
+
+[node name="Level 42" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(320, 384)
+
+[node name="Level 43" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(144, 384)
+
+[node name="Level 44" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(144, 448)
+
+[node name="Level 45" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(329, 432)
+
+[node name="Level 46" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(329, 416)
+
+[node name="Level 47" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(329, 400)
+
+[node name="Level 48" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(304, 384)
+
+[node name="Level 49" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(288, 384)
+
+[node name="Level 50" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(272, 384)
+
+[node name="Level 51" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(256, 448)
+
+[node name="Level 52" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(272, 448)
+
+[node name="Level 53" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(288, 448)
+
+[node name="Level 54" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(304, 448)
+
+[node name="Level 55" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(320, 448)
+
+[node name="Level 56" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(160, 448)
+
+[node name="Level 57" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(176, 448)
+
+[node name="Level 58" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(192, 448)
+
+[node name="Level 59" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(208, 448)
+
+[node name="Level 60" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(160, 384)
+
+[node name="Level 61" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(176, 384)
+
+[node name="Level 62" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(176, 384)
+
+[node name="Level 63" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(448, 896)
+
+[node name="Level 64" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(320, 896)
+
+[node name="Level 65" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(336, 896)
+
+[node name="Level 66" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(352, 896)
+
+[node name="Level 67" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(304, 896)
+
+[node name="Level 68" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(304, 1008)
+
+[node name="Level 69" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, 992)
+
+[node name="Level 70" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, 976)
+
+[node name="Level 71" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, 960)
+
+[node name="Level 72" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, 944)
+
+[node name="Level 73" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, 928)
+
+[node name="Level 74" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, 912)
+
+[node name="Level 75" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(320, 1008)
+
+[node name="Level 76" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(336, 1008)
+
+[node name="Level 77" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(352, 1008)
+
+[node name="Level 78" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(368, 1008)
+
+[node name="Level 79" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(384, 1008)
+
+[node name="Level 80" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(400, 1008)
+
+[node name="Level 81" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(416, 1008)
+
+[node name="Level 82" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(432, 1008)
+
+[node name="Level 83" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(448, 1008)
+
+[node name="Level 84" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(464, 1008)
+
+[node name="Level 85" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(480, 1008)
+
+[node name="Level 86" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(528, 1008)
+
+[node name="Level 87" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(544, 1008)
+
+[node name="Level 88" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(560, 1008)
+
+[node name="Level 89" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(576, 1008)
+
+[node name="Level 90" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(592, 1008)
+
+[node name="Level 91" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(608, 1008)
+
+[node name="Level 92" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(624, 1008)
+
+[node name="Level 93" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(640, 1008)
+
+[node name="Level 94" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(656, 1008)
+
+[node name="Level 95" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(672, 1008)
+
+[node name="Level 96" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(688, 1008)
+
+[node name="Level 97" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(656, 896)
+
+[node name="Level 98" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(672, 896)
+
+[node name="Level 99" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(688, 896)
+
+[node name="Level 100" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(704, 896)
+
+[node name="Level 101" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(704, 1008)
+
+[node name="level_53" parent="objects" instance=ExtResource("26_qflhy")]
+position = Vector2(-272, 56)
+
+[node name="Level 102" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-896, 336)
+
+[node name="Level 103" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-896, 464)
+
+[node name="Level 104" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-880, 464)
+
+[node name="Level 105" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-864, 464)
+
+[node name="Level 106" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-848, 464)
+
+[node name="Level 107" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-832, 464)
+
+[node name="Level 108" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-816, 464)
+
+[node name="Level 109" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-880, 336)
+
+[node name="Level 110" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-864, 336)
+
+[node name="Level 111" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-848, 336)
+
+[node name="Level 112" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-832, 336)
+
+[node name="Level 113" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-816, 336)
+
+[node name="Level 114" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-800, 336)
+
+[node name="Level 115" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-704, 336)
+
+[node name="Level 116" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-640, 336)
+
+[node name="Level 117" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-624, 336)
+
+[node name="Level 118" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(-912, 336)
+
+[node name="Level 119" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 352)
+
+[node name="Level 120" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 368)
+
+[node name="Level 121" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 384)
+
+[node name="Level 122" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 400)
+
+[node name="Level 123" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 416)
+
+[node name="Level 124" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 432)
+
+[node name="Level 125" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-912, 448)
+
+[node name="Level 126" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(-800, 464)
+
+[node name="Level 127" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(-912, 464)
+
+[node name="Level 128" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-800, 448)
+
+[node name="Level 129" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-800, 432)
+
+[node name="Level 130" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(704, 992)
+
+[node name="Level 131" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(704, 976)
+
+[node name="Level 132" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(704, 960)
+
+[node name="Level 133" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(704, 944)
+
+[node name="Level 134" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(704, 928)
+
+[node name="Level 135" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(704, 912)
+
+[node name="Level 136" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(560, 896)
+
+[node name="Level 137" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-752, 704)
+
+[node name="Level 138" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-768, 704)
+
+[node name="Level 139" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-784, 704)
+
+[node name="Level 140" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-800, 704)
+
+[node name="Level 141" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-816, 704)
+
+[node name="Level 142" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-864, 704)
+
+[node name="Level 143" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-848, 704)
+
+[node name="Level 144" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-832, 704)
+
+[node name="Level 145" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-880, 704)
+
+[node name="Level 146" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(-896, 704)
+
+[node name="Level 147" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-672, 704)
+
+[node name="Level 148" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-656, 704)
+
+[node name="Level 149" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-640, 704)
+
+[node name="Level 150" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-624, 704)
+
+[node name="Level 151" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-608, 704)
+
+[node name="Level 152" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-592, 704)
+
+[node name="Level 153" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-576, 704)
+
+[node name="Level 154" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-560, 704)
+
+[node name="Level 155" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-544, 704)
+
+[node name="Level 156" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(-528, 704)
+
+[node name="Level 157" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 688)
+
+[node name="Level 158" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 672)
+
+[node name="Level 159" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 656)
+
+[node name="Level 160" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 640)
+
+[node name="Level 161" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 624)
+
+[node name="Level 162" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 608)
+
+[node name="Level 163" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 592)
+
+[node name="Level 164" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 576)
+
+[node name="Level 165" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 560)
+
+[node name="Level 166" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 544)
+
+[node name="Level 167" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(-528, 528)
+
+[node name="Level 168" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-544, 528)
+
+[node name="Level 169" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-560, 528)
+
+[node name="Level 170" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-576, 528)
+
+[node name="Level 171" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-624, 528)
+
+[node name="Level 172" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-608, 528)
+
+[node name="Level 173" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-592, 528)
+
+[node name="Level 174" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-656, 528)
+
+[node name="Level 175" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-640, 528)
+
+[node name="Level 176" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-672, 528)
+
+[node name="Level 177" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-688, 528)
+
+[node name="Level 178" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-704, 528)
+
+[node name="Level 179" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-720, 528)
+
+[node name="Level 180" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-736, 528)
+
+[node name="Level 181" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-752, 528)
+
+[node name="Level 182" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-768, 528)
+
+[node name="Level 183" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-784, 528)
+
+[node name="Level 184" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-800, 528)
+
+[node name="Level 185" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-816, 528)
+
+[node name="Level 186" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-832, 528)
+
+[node name="Level 187" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-848, 528)
+
+[node name="Level 188" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-864, 528)
+
+[node name="Level 189" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-880, 528)
+
+[node name="Level 190" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(-896, 528)
+
+[node name="Level 191" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 544)
+
+[node name="Level 192" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 560)
+
+[node name="Level 193" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 576)
+
+[node name="Level 194" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 592)
+
+[node name="Level 195" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 608)
+
+[node name="Level 196" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 624)
+
+[node name="Level 197" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 640)
+
+[node name="Level 198" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 656)
+
+[node name="Level 199" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 672)
+
+[node name="Level 200" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-896, 688)
+
+[node name="Level 201" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-480, 128)
+
+[node name="Level 202" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-464, 128)
+
+[node name="Level 203" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-368, 128)
+
+[node name="Level 204" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-544, 80)
+
+[node name="Level 205" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(-528, 80)
+
+[node name="Level 206" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-528, 96)
+
+[node name="Level 207" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-576, -176)
+
+[node name="Level 208" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-480, -176)
+
+[node name="Level 209" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-464, -272)
+
+[node name="Level 210" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-480, -272)
+
+[node name="Level 211" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-496, -272)
+
+[node name="Level 212" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-512, -272)
+
+[node name="Level 213" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-528, -272)
+
+[node name="Level 214" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-544, -272)
+
+[node name="Level 215" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-560, -272)
+
+[node name="Level 216" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-576, -272)
+
+[node name="Level 217" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-592, -272)
+
+[node name="Level 218" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(-608, -272)
+
+[node name="Level 219" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -288)
+
+[node name="Level 220" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -304)
+
+[node name="Level 221" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -320)
+
+[node name="Level 222" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -336)
+
+[node name="Level 223" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -352)
+
+[node name="Level 224" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -368)
+
+[node name="Level 225" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -384)
+
+[node name="Level 226" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -400)
+
+[node name="Level 227" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -416)
+
+[node name="Level 228" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(-608, -432)
+
+[node name="Level 229" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(-608, -448)
+
+[node name="Level 230" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-592, -448)
+
+[node name="Level 231" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-576, -448)
+
+[node name="Level 232" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-560, -448)
+
+[node name="Level 233" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-544, -448)
+
+[node name="Level 234" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-528, -448)
+
+[node name="Level 235" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-512, -448)
+
+[node name="Level 236" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-496, -448)
+
+[node name="Level 237" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-480, -448)
+
+[node name="Level 238" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-464, -448)
+
+[node name="Level 239" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-448, -448)
+
+[node name="Level 240" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-432, -448)
+
+[node name="Level 241" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-416, -448)
+
+[node name="Level 242" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-400, -448)
+
+[node name="Level 243" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-384, -448)
+
+[node name="Level 244" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-368, -448)
+
+[node name="Level 245" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-352, -448)
+
+[node name="Level 246" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-336, -448)
+
+[node name="Level 247" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-320, -448)
+
+[node name="Level 248" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-304, -448)
+
+[node name="Level 249" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-288, -448)
+
+[node name="Level 250" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(-272, -448)
+
+[node name="Level 251" parent="objects" instance=ExtResource("27_f72b0")]
+position = Vector2(-256, -448)
+
+[node name="Level 252" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(-240, -448)
+
+[node name="Level 253" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -432)
+
+[node name="Level 254" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -416)
+
+[node name="Level 255" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -400)
+
+[node name="Level 256" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -384)
+
+[node name="Level 257" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -368)
+
+[node name="Level 258" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -352)
+
+[node name="Level 259" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -336)
+
+[node name="Level 260" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -320)
+
+[node name="Level 261" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -304)
+
+[node name="Level 262" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(-240, -288)
+
+[node name="Level 263" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(-240, -272)
+
+[node name="Level 264" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-384, -272)
+
+[node name="Level 265" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-368, -272)
+
+[node name="Level 266" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-352, -272)
+
+[node name="Level 267" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-336, -272)
+
+[node name="Level 268" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-320, -272)
+
+[node name="Level 269" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-304, -272)
+
+[node name="Level 270" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-288, -272)
+
+[node name="Level 271" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-272, -272)
+
+[node name="Level 272" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(-256, -272)
+
+[node name="Level 273" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(240, -272)
+
+[node name="Level 274" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(256, -288)
+
+[node name="Level 275" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(256, -304)
+
+[node name="Level 276" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(256, -272)
+
+[node name="Level 277" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, -288)
+
+[node name="Level 278" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(304, -304)
+
+[node name="Level 279" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(304, -272)
+
+[node name="Level 280" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(320, -272)
+
+[node name="Level 281" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(336, -272)
+
+[node name="Level 282" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(352, -272)
+
+[node name="Level 283" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(368, -272)
+
+[node name="Level 284" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(384, -272)
+
+[node name="Level 285" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(400, -272)
+
+[node name="Level 286" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(416, -272)
+
+[node name="Level 287" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(432, -272)
+
+[node name="Level 288" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(448, -272)
+
+[node name="Level 289" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -288)
+
+[node name="Level 290" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -304)
+
+[node name="Level 291" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -320)
+
+[node name="Level 292" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -336)
+
+[node name="Level 293" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -352)
+
+[node name="Level 294" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -368)
+
+[node name="Level 295" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(448, -384)
+
+[node name="Level 296" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -384)
+
+[node name="Level 297" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -368)
+
+[node name="Level 298" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -352)
+
+[node name="Level 299" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(144, -272)
+
+[node name="Level 300" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(160, -272)
+
+[node name="Level 301" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(176, -272)
+
+[node name="Level 302" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(192, -272)
+
+[node name="Level 303" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(208, -272)
+
+[node name="Level 304" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(224, -272)
+
+[node name="Level 305" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -288)
+
+[node name="Level 306" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -304)
+
+[node name="Level 307" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -320)
+
+[node name="Level 308" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(144, -336)
+
+[node name="Level 309" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(160, -400)
+
+[node name="Level 310" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(176, -400)
+
+[node name="Level 311" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(192, -400)
+
+[node name="Level 312" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(208, -400)
+
+[node name="Level 313" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(224, -400)
+
+[node name="Level 314" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(240, -400)
+
+[node name="Level 315" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(256, -400)
+
+[node name="Level 316" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(352, -400)
+
+[node name="Level 317" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(144, -400)
+
+[node name="Level 318" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(448, -400)
+
+[node name="Level 319" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(416, -400)
+
+[node name="Level 320" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(432, -400)
+
+[node name="Level 321" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(608, -416)
+
+[node name="Level 322" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(592, -416)
+
+[node name="Level 323" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(576, -416)
+
+[node name="Level 324" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(560, -416)
+
+[node name="Level 325" parent="objects" instance=ExtResource("4_5q1rr")]
+position = Vector2(544, -368)
+
+[node name="Level 326" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(544, -383)
+
+[node name="Level 327" parent="objects" instance=ExtResource("7_icc4n")]
+position = Vector2(544, -400)
+
+[node name="Level 328" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(752, -384)
+
+[node name="Level 329" parent="objects" instance=ExtResource("6_u4arb")]
+position = Vector2(752, -400)
+
+[node name="Level 330" parent="objects" instance=ExtResource("5_po04c")]
+position = Vector2(752, -368)
+
+[node name="Level 331" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(560, -368)
+
+[node name="Level 332" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(576, -368)
+
+[node name="Level 333" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(592, -368)
+
+[node name="Level 334" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(608, -368)
+
+[node name="Level 335" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(624, -368)
+
+[node name="Level 336" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(688, -368)
+
+[node name="Level 337" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(704, -368)
+
+[node name="Level 338" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(720, -368)
+
+[node name="Level 339" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(736, -368)
+
+[node name="Level 340" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(704, -416)
+
+[node name="Level 341" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(720, -416)
+
+[node name="Level 342" parent="objects" instance=ExtResource("3_v3ani")]
+position = Vector2(736, -416)
+
+[node name="Level 343" parent="objects" instance=ExtResource("8_b0eaf")]
+position = Vector2(752, -416)
+
+[node name="Level 344" parent="objects" instance=ExtResource("9_u4arb")]
+position = Vector2(544, -416)
+
+[node name="level_167" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-760, 672)
+
+[node name="level_168" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-224, 464)
+
+[node name="level_169" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-208, 464)
+
+[node name="level_170" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-192, 464)
+
+[node name="level_171" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-176, 464)
+
+[node name="level_172" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-160, 464)
+
+[node name="level_173" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-144, 464)
+
+[node name="level_174" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-128, 464)
+
+[node name="level_175" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-112, 464)
+
+[node name="level_176" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-96, 464)
+
+[node name="level_177" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-80, 464)
+
+[node name="level_178" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-64, 464)
+
+[node name="level_179" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-48, 464)
+
+[node name="level_180" parent="objects" instance=ExtResource("29_6yl6j")]
+position = Vector2(-32, 464)
+
+[node name="level_181" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 448)
+
+[node name="level_182" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 432)
+
+[node name="level_183" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 416)
+
+[node name="level_184" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 400)
+
+[node name="level_185" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 384)
+
+[node name="level_186" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 368)
+
+[node name="level_187" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 352)
+
+[node name="level_188" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 336)
+
+[node name="level_189" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 320)
+
+[node name="level_190" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-24, 304)
+
+[node name="level_191" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-48, 288)
+
+[node name="level_192" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-64, 288)
+
+[node name="level_193" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-80, 288)
+
+[node name="level_194" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-96, 288)
+
+[node name="level_195" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-112, 288)
+
+[node name="level_196" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-128, 288)
+
+[node name="level_197" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-144, 288)
+
+[node name="level_198" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-192, 288)
+
+[node name="level_199" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-208, 288)
+
+[node name="level_200" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-224, 288)
+
+[node name="level_201" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-240, 288)
+
+[node name="level_202" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-288, 288)
+
+[node name="level_203" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-272, 288)
+
+[node name="level_204" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-256, 288)
+
+[node name="level_205" parent="objects" instance=ExtResource("31_pklil")]
+position = Vector2(-304, 288)
+
+[node name="level_206" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 304)
+
+[node name="level_207" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 320)
+
+[node name="level_208" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 336)
+
+[node name="level_209" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 352)
+
+[node name="level_210" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 368)
+
+[node name="level_211" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 384)
+
+[node name="level_212" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 400)
+
+[node name="level_213" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 416)
+
+[node name="level_214" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 432)
+
+[node name="level_215" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-312, 448)
+
+[node name="level_216" parent="objects" instance=ExtResource("31_pklil")]
+position = Vector2(-304, 464)
+
+[node name="level_217" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-288, 464)
+
+[node name="level_218" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-272, 464)
+
+[node name="level_219" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-256, 464)
+
+[node name="level_220" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-240, 464)
+
+[node name="level_221" parent="objects" instance=ExtResource("29_6yl6j")]
+position = Vector2(-32, 288)
+
+[node name="level_222" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(240, -128)
+
+[node name="level_223" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(192, -16)
+
+[node name="level_224" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(208, -16)
+
+[node name="level_225" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(224, -16)
+
+[node name="level_226" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(240, -16)
+
+[node name="level_227" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(256, -16)
+
+[node name="level_228" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(304, -16)
+
+[node name="level_229" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(320, -16)
+
+[node name="level_230" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(336, -16)
+
+[node name="level_231" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(352, -16)
+
+[node name="level_232" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(368, -16)
+
+[node name="level_233" parent="objects" instance=ExtResource("29_6yl6j")]
+position = Vector2(384, -16)
+
+[node name="level_234" parent="objects" instance=ExtResource("31_pklil")]
+position = Vector2(176, -128)
+
+[node name="level_235" parent="objects" instance=ExtResource("29_6yl6j")]
+position = Vector2(384, -128)
+
+[node name="level_236" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(168, -48)
+
+[node name="level_237" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(168, -32)
+
+[node name="level_238" parent="objects" instance=ExtResource("31_pklil")]
+position = Vector2(174, -16)
+
+[node name="level_239" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(168, -64)
+
+[node name="level_240" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(168, -80)
+
+[node name="level_241" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(168, -96)
+
+[node name="level_242" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(168, -112)
+
+[node name="level_243" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(392, -32)
+
+[node name="level_244" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(392, -48)
+
+[node name="level_245" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(392, -64)
+
+[node name="level_246" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(392, -80)
+
+[node name="level_247" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(392, -96)
+
+[node name="level_248" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(392, -112)
+
+[node name="level_249" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(336, -128)
+
+[node name="level_250" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(352, -128)
+
+[node name="level_251" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(368, -128)
+
+[node name="level_252" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-848, -288)
+
+[node name="level_253" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-832, -288)
+
+[node name="level_254" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-816, -288)
+
+[node name="level_255" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-800, -288)
+
+[node name="level_256" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-784, -288)
+
+[node name="level_257" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-960, -288)
+
+[node name="level_258" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-944, -288)
+
+[node name="level_259" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-928, -288)
+
+[node name="level_260" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-912, -288)
+
+[node name="level_261" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-896, -288)
+
+[node name="level_262" parent="objects" instance=ExtResource("31_pklil")]
+position = Vector2(-976, -288)
+
+[node name="level_263" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-984, -304)
+
+[node name="level_264" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-984, -320)
+
+[node name="level_265" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-984, -336)
+
+[node name="level_266" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-984, -352)
+
+[node name="level_267" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-984, -368)
+
+[node name="level_268" parent="objects" instance=ExtResource("32_bnnb0")]
+position = Vector2(-984, -384)
+
+[node name="level_269" parent="objects" instance=ExtResource("31_pklil")]
+position = Vector2(-976, -400)
+
+[node name="level_270" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-912, -400)
+
+[node name="level_271" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-816, -400)
+
+[node name="level_272" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-800, -400)
+
+[node name="level_273" parent="objects" instance=ExtResource("28_ydesw")]
+position = Vector2(-784, -400)
+
+[node name="level_274" parent="objects" instance=ExtResource("29_6yl6j")]
+position = Vector2(-768, -400)
+
+[node name="level_275" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-760, -383)
+
+[node name="level_276" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-760, -368)
+
+[node name="level_277" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-760, -352)
+
+[node name="level_278" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-760, -336)
+
+[node name="level_279" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-760, -320)
+
+[node name="level_280" parent="objects" instance=ExtResource("30_vcpp3")]
+position = Vector2(-760, -304)
+
+[node name="level_281" parent="objects" instance=ExtResource("29_6yl6j")]
+position = Vector2(-768, -288)
+
+[node name="level_282" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-24, -48)
+
+[node name="level_283" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(40, -48)
+
+[node name="level_284" parent="objects" instance=ExtResource("11_b0eaf")]
+position = Vector2(-216, 768)
+
+[node name="level_285" parent="objects" instance=ExtResource("12_uvrjk")]
+position = Vector2(200, -144)
+
+[node name="level_286" parent="objects" instance=ExtResource("13_qflhy")]
+position = Vector2(376, -416)
+
+[node name="level_287" parent="objects" instance=ExtResource("14_f72b0")]
+position = Vector2(-536, -416)
+
+[node name="level_288" parent="objects" instance=ExtResource("14_f72b0")]
+position = Vector2(-312, -416)
+
+[node name="level_289" parent="objects" instance=ExtResource("13_qflhy")]
+position = Vector2(-456, -192)
+
+[node name="level_290" parent="objects" instance=ExtResource("12_uvrjk")]
+position = Vector2(-952, -416)
+
+[node name="level_291" parent="objects" instance=ExtResource("15_5qoex")]
+position = Vector2(-680, 80)
+
+[node name="level_292" parent="objects" instance=ExtResource("13_qflhy")]
+position = Vector2(-344, 112)
+
+[node name="level_293" parent="objects" instance=ExtResource("14_f72b0")]
+position = Vector2(-648, 224)
+
+[node name="Level 345" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(0, -16)
 collision_layer = 1
 
-[node name="Level 2" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 346" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(32, -16)
 collision_layer = 1
 
-[node name="Level 3" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 347" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(16, -16)
 collision_layer = 1
 
-[node name="Level 4" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 348" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-208, -16)
 collision_layer = 1
 
-[node name="Level 5" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 349" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-176, -16)
 collision_layer = 1
 
-[node name="Level 6" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 350" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-192, -16)
 collision_layer = 1
 
-[node name="Level 7" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 351" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-160, -16)
 collision_layer = 1
 
-[node name="Level 8" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 352" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-128, -16)
 collision_layer = 1
 
-[node name="Level 9" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 353" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-144, -16)
 collision_layer = 1
 
-[node name="Level 10" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 354" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-48, -16)
 collision_layer = 1
 
-[node name="Level 11" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 355" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-16, -16)
 collision_layer = 1
 
-[node name="Level 12" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 356" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-32, -16)
 collision_layer = 1
 
-[node name="Level 13" parent="Objects1" instance=ExtResource("4_5q1rr")]
+[node name="Level 357" parent="objects" instance=ExtResource("4_5q1rr")]
 position = Vector2(-64, -16)
 collision_layer = 1
 
-[node name="Level 14" parent="Objects1" instance=ExtResource("5_po04c")]
+[node name="Level 358" parent="objects" instance=ExtResource("5_po04c")]
 position = Vector2(-112, -16)
 collision_layer = 1
 
-[node name="Level 15" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 359" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(-112, -32)
 collision_layer = 1
 
-[node name="Level 16" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 360" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(-112, -48)
 collision_layer = 1
 
-[node name="Level 17" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 361" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-64, -32)
 collision_layer = 1
 
-[node name="Level 18" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 362" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-64, -48)
 collision_layer = 1
 
-[node name="Level 19" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 363" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(64, -16)
 collision_layer = 1
 
-[node name="Level 20" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 364" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(48, -16)
 collision_layer = 1
 
-[node name="Level 21" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 365" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-16, -144)
 collision_layer = 1
 
-[node name="Level 22" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 366" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(16, -144)
 collision_layer = 1
 
-[node name="Level 23" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 367" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(0, -144)
 collision_layer = 1
 
-[node name="Level 24" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 368" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(32, -144)
 collision_layer = 1
 
-[node name="Level 25" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 369" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(64, -144)
 collision_layer = 1
 
-[node name="Level 26" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 370" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(48, -144)
 collision_layer = 1
 
-[node name="Level 27" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 371" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-112, -144)
 collision_layer = 1
 
-[node name="Level 28" parent="Objects1" instance=ExtResource("8_b0eaf")]
+[node name="Level 372" parent="objects" instance=ExtResource("8_b0eaf")]
 position = Vector2(80, -144)
 collision_layer = 1
 
-[node name="Level 29" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 373" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-208, -144)
 collision_layer = 1
 
-[node name="Level 30" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 374" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-176, -144)
 collision_layer = 1
 
-[node name="Level 31" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 375" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-192, -144)
 collision_layer = 1
 
-[node name="Level 32" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 376" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-160, -144)
 collision_layer = 1
 
-[node name="Level 33" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 377" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-128, -144)
 collision_layer = 1
 
-[node name="Level 34" parent="Objects1" instance=ExtResource("3_v3ani")]
+[node name="Level 378" parent="objects" instance=ExtResource("3_v3ani")]
 position = Vector2(-144, -144)
 collision_layer = 1
 
-[node name="Level 35" parent="Objects1" instance=ExtResource("4_5q1rr")]
+[node name="Level 379" parent="objects" instance=ExtResource("4_5q1rr")]
 position = Vector2(-224, -16)
 collision_layer = 1
 
-[node name="Level 36" parent="Objects1" instance=ExtResource("5_po04c")]
+[node name="Level 380" parent="objects" instance=ExtResource("5_po04c")]
 position = Vector2(80, -16)
 collision_layer = 1
 
-[node name="Level 37" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 381" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -32)
 collision_layer = 1
 
-[node name="Level 38" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 382" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -48)
 collision_layer = 1
 
-[node name="Level 39" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 383" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -128)
 collision_layer = 1
 
-[node name="Level 40" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 384" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -112)
 collision_layer = 1
 
-[node name="Level 41" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 385" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -96)
 collision_layer = 1
 
-[node name="Level 42" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 386" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -64)
 collision_layer = 1
 
-[node name="Level 43" parent="Objects1" instance=ExtResource("6_u4arb")]
+[node name="Level 387" parent="objects" instance=ExtResource("6_u4arb")]
 position = Vector2(80, -80)
 collision_layer = 1
 
-[node name="Level 44" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 388" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -64)
 collision_layer = 1
 
-[node name="Level 45" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 389" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -48)
 collision_layer = 1
 
-[node name="Level 46" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 390" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -112)
 collision_layer = 1
 
-[node name="Level 47" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 391" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -128)
 collision_layer = 1
 
-[node name="Level 48" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 392" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -96)
 collision_layer = 1
 
-[node name="Level 49" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 393" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -80)
 collision_layer = 1
 
-[node name="Level 50" parent="Objects1" instance=ExtResource("7_icc4n")]
+[node name="Level 394" parent="objects" instance=ExtResource("7_icc4n")]
 position = Vector2(-224, -32)
 collision_layer = 1
 
-[node name="Level 51" parent="Objects1" instance=ExtResource("9_u4arb")]
+[node name="Level 395" parent="objects" instance=ExtResource("9_u4arb")]
 position = Vector2(-224, -144)
 collision_layer = 1
 
-[node name="Level 53" parent="Objects1" instance=ExtResource("9_u4arb")]
+[node name="Level 396" parent="objects" instance=ExtResource("9_u4arb")]
 position = Vector2(-224, -144)
 collision_layer = 1
 
-[node name="Level 52" parent="Objects1" instance=ExtResource("10_icc4n")]
+[node name="Level 397" parent="objects" instance=ExtResource("10_icc4n")]
 position = Vector2(-63, 32)
 collision_layer = 1
-
-[node name="Objects2" type="Node" parent="."]
-
-[node name="level_2" parent="Objects2" instance=ExtResource("11_b0eaf")]
-position = Vector2(-24, -48)
-
-[node name="level_3" parent="Objects2" instance=ExtResource("11_b0eaf")]
-position = Vector2(40, -48)
-
-[node name="level_4" parent="Objects2" instance=ExtResource("11_b0eaf")]
-position = Vector2(-216, 768)
-
-[node name="level_5" parent="Objects2" instance=ExtResource("12_uvrjk")]
-position = Vector2(200, -144)
-
-[node name="level_6" parent="Objects2" instance=ExtResource("13_qflhy")]
-position = Vector2(376, -416)
-
-[node name="level_7" parent="Objects2" instance=ExtResource("14_f72b0")]
-position = Vector2(-536, -416)
-
-[node name="level_8" parent="Objects2" instance=ExtResource("14_f72b0")]
-position = Vector2(-312, -416)
-
-[node name="level_9" parent="Objects2" instance=ExtResource("13_qflhy")]
-position = Vector2(-456, -192)
-
-[node name="level_10" parent="Objects2" instance=ExtResource("12_uvrjk")]
-position = Vector2(-952, -416)
-
-[node name="level_11" parent="Objects2" instance=ExtResource("15_5qoex")]
-position = Vector2(-680, 80)
-
-[node name="level_12" parent="Objects2" instance=ExtResource("13_qflhy")]
-position = Vector2(-344, 112)
-
-[node name="level_13" parent="Objects2" instance=ExtResource("14_f72b0")]
-position = Vector2(-648, 224)
-
-[node name="Objects3" type="Node" parent="."]
-
-[node name="Level 1" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-896, 336)
-
-[node name="Level 2" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-896, 464)
-
-[node name="Level 3" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-880, 464)
-
-[node name="Level 4" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-864, 464)
-
-[node name="Level 5" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-848, 464)
-
-[node name="Level 6" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-832, 464)
-
-[node name="Level 7" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-816, 464)
-
-[node name="Level 8" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-880, 336)
-
-[node name="Level 9" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-864, 336)
-
-[node name="Level 10" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-848, 336)
-
-[node name="Level 11" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-832, 336)
-
-[node name="Level 12" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-816, 336)
-
-[node name="Level 13" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-800, 336)
-
-[node name="Level 14" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-704, 336)
-
-[node name="Level 15" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-640, 336)
-
-[node name="Level 16" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-624, 336)
-
-[node name="Level 17" parent="Objects3" instance=ExtResource("9_u4arb")]
-position = Vector2(-912, 336)
-
-[node name="Level 18" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 352)
-
-[node name="Level 19" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 368)
-
-[node name="Level 20" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 384)
-
-[node name="Level 21" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 400)
-
-[node name="Level 22" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 416)
-
-[node name="Level 23" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 432)
-
-[node name="Level 24" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-912, 448)
-
-[node name="Level 25" parent="Objects3" instance=ExtResource("5_po04c")]
-position = Vector2(-800, 464)
-
-[node name="Level 26" parent="Objects3" instance=ExtResource("4_5q1rr")]
-position = Vector2(-912, 464)
-
-[node name="Level 27" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-800, 448)
-
-[node name="Level 28" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-800, 432)
-
-[node name="Level 29" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(704, 992)
-
-[node name="Level 30" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(704, 976)
-
-[node name="Level 31" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(704, 960)
-
-[node name="Level 32" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(704, 944)
-
-[node name="Level 33" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(704, 928)
-
-[node name="Level 34" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(704, 912)
-
-[node name="Level 35" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(560, 896)
-
-[node name="Level 36" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-752, 704)
-
-[node name="Level 37" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-768, 704)
-
-[node name="Level 38" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-784, 704)
-
-[node name="Level 39" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-800, 704)
-
-[node name="Level 40" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-816, 704)
-
-[node name="Level 41" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-864, 704)
-
-[node name="Level 42" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-848, 704)
-
-[node name="Level 43" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-832, 704)
-
-[node name="Level 44" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-880, 704)
-
-[node name="Level 45" parent="Objects3" instance=ExtResource("4_5q1rr")]
-position = Vector2(-896, 704)
-
-[node name="Level 46" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-672, 704)
-
-[node name="Level 47" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-656, 704)
-
-[node name="Level 48" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-640, 704)
-
-[node name="Level 49" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-624, 704)
-
-[node name="Level 50" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-608, 704)
-
-[node name="Level 51" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-592, 704)
-
-[node name="Level 52" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-576, 704)
-
-[node name="Level 53" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-560, 704)
-
-[node name="Level 54" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-544, 704)
-
-[node name="Level 55" parent="Objects3" instance=ExtResource("5_po04c")]
-position = Vector2(-528, 704)
-
-[node name="Level 56" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 688)
-
-[node name="Level 57" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 672)
-
-[node name="Level 58" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 656)
-
-[node name="Level 59" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 640)
-
-[node name="Level 60" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 624)
-
-[node name="Level 61" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 608)
-
-[node name="Level 62" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 592)
-
-[node name="Level 63" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 576)
-
-[node name="Level 64" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 560)
-
-[node name="Level 65" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 544)
-
-[node name="Level 66" parent="Objects3" instance=ExtResource("8_b0eaf")]
-position = Vector2(-528, 528)
-
-[node name="Level 67" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-544, 528)
-
-[node name="Level 68" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-560, 528)
-
-[node name="Level 69" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-576, 528)
-
-[node name="Level 70" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-624, 528)
-
-[node name="Level 71" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-608, 528)
-
-[node name="Level 72" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-592, 528)
-
-[node name="Level 73" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-656, 528)
-
-[node name="Level 74" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-640, 528)
-
-[node name="Level 75" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-672, 528)
-
-[node name="Level 76" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-688, 528)
-
-[node name="Level 77" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-704, 528)
-
-[node name="Level 78" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-720, 528)
-
-[node name="Level 79" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-736, 528)
-
-[node name="Level 80" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-752, 528)
-
-[node name="Level 81" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-768, 528)
-
-[node name="Level 82" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-784, 528)
-
-[node name="Level 83" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-800, 528)
-
-[node name="Level 84" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-816, 528)
-
-[node name="Level 85" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-832, 528)
-
-[node name="Level 86" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-848, 528)
-
-[node name="Level 87" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-864, 528)
-
-[node name="Level 88" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-880, 528)
-
-[node name="Level 89" parent="Objects3" instance=ExtResource("9_u4arb")]
-position = Vector2(-896, 528)
-
-[node name="Level 90" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 544)
-
-[node name="Level 91" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 560)
-
-[node name="Level 92" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 576)
-
-[node name="Level 93" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 592)
-
-[node name="Level 94" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 608)
-
-[node name="Level 95" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 624)
-
-[node name="Level 96" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 640)
-
-[node name="Level 97" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 656)
-
-[node name="Level 98" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 672)
-
-[node name="Level 99" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-896, 688)
-
-[node name="Level 100" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-480, 128)
-
-[node name="Level 101" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-464, 128)
-
-[node name="Level 102" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-368, 128)
-
-[node name="Level 103" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-544, 80)
-
-[node name="Level 104" parent="Objects3" instance=ExtResource("8_b0eaf")]
-position = Vector2(-528, 80)
-
-[node name="Level 105" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-528, 96)
-
-[node name="Level 106" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-576, -176)
-
-[node name="Level 107" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-480, -176)
-
-[node name="Level 108" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-464, -272)
-
-[node name="Level 109" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-480, -272)
-
-[node name="Level 110" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-496, -272)
-
-[node name="Level 111" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-512, -272)
-
-[node name="Level 112" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-528, -272)
-
-[node name="Level 113" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-544, -272)
-
-[node name="Level 114" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-560, -272)
-
-[node name="Level 115" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-576, -272)
-
-[node name="Level 116" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-592, -272)
-
-[node name="Level 117" parent="Objects3" instance=ExtResource("4_5q1rr")]
-position = Vector2(-608, -272)
-
-[node name="Level 118" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -288)
-
-[node name="Level 119" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -304)
-
-[node name="Level 120" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -320)
-
-[node name="Level 121" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -336)
-
-[node name="Level 122" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -352)
-
-[node name="Level 123" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -368)
-
-[node name="Level 124" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -384)
-
-[node name="Level 125" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -400)
-
-[node name="Level 126" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -416)
-
-[node name="Level 127" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(-608, -432)
-
-[node name="Level 128" parent="Objects3" instance=ExtResource("9_u4arb")]
-position = Vector2(-608, -448)
-
-[node name="Level 129" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-592, -448)
-
-[node name="Level 130" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-576, -448)
-
-[node name="Level 131" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-560, -448)
-
-[node name="Level 132" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-544, -448)
-
-[node name="Level 133" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-528, -448)
-
-[node name="Level 134" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-512, -448)
-
-[node name="Level 135" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-496, -448)
-
-[node name="Level 136" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-480, -448)
-
-[node name="Level 137" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-464, -448)
-
-[node name="Level 138" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-448, -448)
-
-[node name="Level 139" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-432, -448)
-
-[node name="Level 140" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-416, -448)
-
-[node name="Level 141" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-400, -448)
-
-[node name="Level 142" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-384, -448)
-
-[node name="Level 143" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-368, -448)
-
-[node name="Level 144" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-352, -448)
-
-[node name="Level 145" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-336, -448)
-
-[node name="Level 146" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-320, -448)
-
-[node name="Level 147" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-304, -448)
-
-[node name="Level 148" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-288, -448)
-
-[node name="Level 149" parent="Objects3" instance=ExtResource("27_f72b0")]
-position = Vector2(-272, -448)
-
-[node name="Level 150" parent="Objects3" instance=ExtResource("27_f72b0")]
-position = Vector2(-256, -448)
-
-[node name="Level 151" parent="Objects3" instance=ExtResource("8_b0eaf")]
-position = Vector2(-240, -448)
-
-[node name="Level 152" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -432)
-
-[node name="Level 153" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -416)
-
-[node name="Level 154" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -400)
-
-[node name="Level 155" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -384)
-
-[node name="Level 156" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -368)
-
-[node name="Level 157" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -352)
-
-[node name="Level 158" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -336)
-
-[node name="Level 159" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -320)
-
-[node name="Level 160" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -304)
-
-[node name="Level 161" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(-240, -288)
-
-[node name="Level 162" parent="Objects3" instance=ExtResource("5_po04c")]
-position = Vector2(-240, -272)
-
-[node name="Level 163" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-384, -272)
-
-[node name="Level 164" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-368, -272)
-
-[node name="Level 165" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-352, -272)
-
-[node name="Level 166" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-336, -272)
-
-[node name="Level 167" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-320, -272)
-
-[node name="Level 168" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-304, -272)
-
-[node name="Level 169" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-288, -272)
-
-[node name="Level 170" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-272, -272)
-
-[node name="Level 171" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(-256, -272)
-
-[node name="Level 172" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(240, -272)
-
-[node name="Level 173" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(256, -288)
-
-[node name="Level 174" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(256, -304)
-
-[node name="Level 175" parent="Objects3" instance=ExtResource("5_po04c")]
-position = Vector2(256, -272)
-
-[node name="Level 176" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(304, -288)
-
-[node name="Level 177" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(304, -304)
-
-[node name="Level 178" parent="Objects3" instance=ExtResource("4_5q1rr")]
-position = Vector2(304, -272)
-
-[node name="Level 179" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(320, -272)
-
-[node name="Level 180" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(336, -272)
-
-[node name="Level 181" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(352, -272)
-
-[node name="Level 182" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(368, -272)
-
-[node name="Level 183" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(384, -272)
-
-[node name="Level 184" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(400, -272)
-
-[node name="Level 185" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(416, -272)
-
-[node name="Level 186" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(432, -272)
-
-[node name="Level 187" parent="Objects3" instance=ExtResource("5_po04c")]
-position = Vector2(448, -272)
-
-[node name="Level 188" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -288)
-
-[node name="Level 189" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -304)
-
-[node name="Level 190" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -320)
-
-[node name="Level 191" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -336)
-
-[node name="Level 192" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -352)
-
-[node name="Level 193" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -368)
-
-[node name="Level 194" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(448, -384)
-
-[node name="Level 195" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -384)
-
-[node name="Level 196" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -368)
-
-[node name="Level 197" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -352)
-
-[node name="Level 198" parent="Objects3" instance=ExtResource("4_5q1rr")]
-position = Vector2(144, -272)
-
-[node name="Level 199" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(160, -272)
-
-[node name="Level 200" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(176, -272)
-
-[node name="Level 201" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(192, -272)
-
-[node name="Level 202" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(208, -272)
-
-[node name="Level 203" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(224, -272)
-
-[node name="Level 204" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -288)
-
-[node name="Level 205" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -304)
-
-[node name="Level 206" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -320)
-
-[node name="Level 207" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(144, -336)
-
-[node name="Level 208" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(160, -400)
-
-[node name="Level 209" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(176, -400)
-
-[node name="Level 210" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(192, -400)
-
-[node name="Level 211" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(208, -400)
-
-[node name="Level 212" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(224, -400)
-
-[node name="Level 213" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(240, -400)
-
-[node name="Level 214" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(256, -400)
-
-[node name="Level 215" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(352, -400)
-
-[node name="Level 216" parent="Objects3" instance=ExtResource("9_u4arb")]
-position = Vector2(144, -400)
-
-[node name="Level 217" parent="Objects3" instance=ExtResource("8_b0eaf")]
-position = Vector2(448, -400)
-
-[node name="Level 218" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(416, -400)
-
-[node name="Level 219" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(432, -400)
-
-[node name="Level 220" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(608, -416)
-
-[node name="Level 221" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(592, -416)
-
-[node name="Level 222" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(576, -416)
-
-[node name="Level 223" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(560, -416)
-
-[node name="Level 224" parent="Objects3" instance=ExtResource("4_5q1rr")]
-position = Vector2(544, -368)
-
-[node name="Level 225" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(544, -383)
-
-[node name="Level 226" parent="Objects3" instance=ExtResource("7_icc4n")]
-position = Vector2(544, -400)
-
-[node name="Level 227" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(752, -384)
-
-[node name="Level 228" parent="Objects3" instance=ExtResource("6_u4arb")]
-position = Vector2(752, -400)
-
-[node name="Level 229" parent="Objects3" instance=ExtResource("5_po04c")]
-position = Vector2(752, -368)
-
-[node name="Level 230" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(560, -368)
-
-[node name="Level 231" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(576, -368)
-
-[node name="Level 232" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(592, -368)
-
-[node name="Level 233" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(608, -368)
-
-[node name="Level 234" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(624, -368)
-
-[node name="Level 235" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(688, -368)
-
-[node name="Level 236" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(704, -368)
-
-[node name="Level 237" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(720, -368)
-
-[node name="Level 238" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(736, -368)
-
-[node name="Level 239" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(704, -416)
-
-[node name="Level 240" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(720, -416)
-
-[node name="Level 241" parent="Objects3" instance=ExtResource("3_v3ani")]
-position = Vector2(736, -416)
-
-[node name="Level 242" parent="Objects3" instance=ExtResource("8_b0eaf")]
-position = Vector2(752, -416)
-
-[node name="Level 243" parent="Objects3" instance=ExtResource("9_u4arb")]
-position = Vector2(544, -416)
-
-[node name="level_2" parent="Objects3" instance=ExtResource("11_b0eaf")]
-position = Vector2(-760, 672)
-
-[node name="level_3" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-224, 464)
-
-[node name="level_4" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-208, 464)
-
-[node name="level_5" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-192, 464)
-
-[node name="level_6" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-176, 464)
-
-[node name="level_7" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-160, 464)
-
-[node name="level_8" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-144, 464)
-
-[node name="level_9" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-128, 464)
-
-[node name="level_10" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-112, 464)
-
-[node name="level_11" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-96, 464)
-
-[node name="level_12" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-80, 464)
-
-[node name="level_13" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-64, 464)
-
-[node name="level_14" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-48, 464)
-
-[node name="level_15" parent="Objects3" instance=ExtResource("29_6yl6j")]
-position = Vector2(-32, 464)
-
-[node name="level_16" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 448)
-
-[node name="level_17" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 432)
-
-[node name="level_18" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 416)
-
-[node name="level_19" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 400)
-
-[node name="level_20" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 384)
-
-[node name="level_21" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 368)
-
-[node name="level_22" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 352)
-
-[node name="level_23" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 336)
-
-[node name="level_24" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 320)
-
-[node name="level_25" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-24, 304)
-
-[node name="level_27" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-48, 288)
-
-[node name="level_28" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-64, 288)
-
-[node name="level_29" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-80, 288)
-
-[node name="level_30" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-96, 288)
-
-[node name="level_31" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-112, 288)
-
-[node name="level_32" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-128, 288)
-
-[node name="level_33" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-144, 288)
-
-[node name="level_34" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-192, 288)
-
-[node name="level_35" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-208, 288)
-
-[node name="level_36" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-224, 288)
-
-[node name="level_37" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-240, 288)
-
-[node name="level_38" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-288, 288)
-
-[node name="level_39" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-272, 288)
-
-[node name="level_40" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-256, 288)
-
-[node name="level_41" parent="Objects3" instance=ExtResource("31_pklil")]
-position = Vector2(-304, 288)
-
-[node name="level_42" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 304)
-
-[node name="level_43" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 320)
-
-[node name="level_44" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 336)
-
-[node name="level_45" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 352)
-
-[node name="level_46" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 368)
-
-[node name="level_47" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 384)
-
-[node name="level_48" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 400)
-
-[node name="level_49" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 416)
-
-[node name="level_50" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 432)
-
-[node name="level_51" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-312, 448)
-
-[node name="level_52" parent="Objects3" instance=ExtResource("31_pklil")]
-position = Vector2(-304, 464)
-
-[node name="level_53" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-288, 464)
-
-[node name="level_54" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-272, 464)
-
-[node name="level_55" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-256, 464)
-
-[node name="level_56" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-240, 464)
-
-[node name="level_26" parent="Objects3" instance=ExtResource("29_6yl6j")]
-position = Vector2(-32, 288)
-
-[node name="level_57" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(240, -128)
-
-[node name="level_58" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(192, -16)
-
-[node name="level_59" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(208, -16)
-
-[node name="level_60" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(224, -16)
-
-[node name="level_61" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(240, -16)
-
-[node name="level_62" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(256, -16)
-
-[node name="level_63" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(304, -16)
-
-[node name="level_64" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(320, -16)
-
-[node name="level_65" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(336, -16)
-
-[node name="level_66" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(352, -16)
-
-[node name="level_67" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(368, -16)
-
-[node name="level_68" parent="Objects3" instance=ExtResource("29_6yl6j")]
-position = Vector2(384, -16)
-
-[node name="level_69" parent="Objects3" instance=ExtResource("31_pklil")]
-position = Vector2(176, -128)
-
-[node name="level_70" parent="Objects3" instance=ExtResource("29_6yl6j")]
-position = Vector2(384, -128)
-
-[node name="level_71" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(168, -48)
-
-[node name="level_72" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(168, -32)
-
-[node name="level_73" parent="Objects3" instance=ExtResource("31_pklil")]
-position = Vector2(174, -16)
-
-[node name="level_74" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(168, -64)
-
-[node name="level_75" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(168, -80)
-
-[node name="level_76" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(168, -96)
-
-[node name="level_77" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(168, -112)
-
-[node name="level_78" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(392, -32)
-
-[node name="level_79" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(392, -48)
-
-[node name="level_80" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(392, -64)
-
-[node name="level_81" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(392, -80)
-
-[node name="level_82" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(392, -96)
-
-[node name="level_83" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(392, -112)
-
-[node name="level_84" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(336, -128)
-
-[node name="level_85" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(352, -128)
-
-[node name="level_86" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(368, -128)
-
-[node name="level_87" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-848, -288)
-
-[node name="level_88" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-832, -288)
-
-[node name="level_89" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-816, -288)
-
-[node name="level_90" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-800, -288)
-
-[node name="level_91" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-784, -288)
-
-[node name="level_92" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-960, -288)
-
-[node name="level_93" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-944, -288)
-
-[node name="level_94" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-928, -288)
-
-[node name="level_95" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-912, -288)
-
-[node name="level_96" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-896, -288)
-
-[node name="level_97" parent="Objects3" instance=ExtResource("31_pklil")]
-position = Vector2(-976, -288)
-
-[node name="level_98" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-984, -304)
-
-[node name="level_99" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-984, -320)
-
-[node name="level_100" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-984, -336)
-
-[node name="level_101" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-984, -352)
-
-[node name="level_102" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-984, -368)
-
-[node name="level_103" parent="Objects3" instance=ExtResource("32_bnnb0")]
-position = Vector2(-984, -384)
-
-[node name="level_104" parent="Objects3" instance=ExtResource("31_pklil")]
-position = Vector2(-976, -400)
-
-[node name="level_105" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-912, -400)
-
-[node name="level_106" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-816, -400)
-
-[node name="level_107" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-800, -400)
-
-[node name="level_108" parent="Objects3" instance=ExtResource("28_ydesw")]
-position = Vector2(-784, -400)
-
-[node name="level_109" parent="Objects3" instance=ExtResource("29_6yl6j")]
-position = Vector2(-768, -400)
-
-[node name="level_110" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-760, -383)
-
-[node name="level_111" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-760, -368)
-
-[node name="level_112" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-760, -352)
-
-[node name="level_113" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-760, -336)
-
-[node name="level_114" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-760, -320)
-
-[node name="level_115" parent="Objects3" instance=ExtResource("30_vcpp3")]
-position = Vector2(-760, -304)
-
-[node name="level_116" parent="Objects3" instance=ExtResource("29_6yl6j")]
-position = Vector2(-768, -288)
-
-[node name="Objects4" type="Node" parent="."]
-
-[node name="level_3" parent="Objects4" instance=ExtResource("14_b0eaf")]
-position = Vector2(-32, -96)
-
-[node name="level_2" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(232, -96)
-
-[node name="level5" parent="Objects4" instance=ExtResource("13_0havn")]
-position = Vector2(288, -152)
-
-[node name="level6" parent="Objects4" instance=ExtResource("14_ov17k")]
-position = Vector2(304, -424)
-
-[node name="level_4" parent="Objects4" instance=ExtResource("15_2dnfj")]
-position = Vector2(368, -368)
-
-[node name="level7" parent="Objects4" instance=ExtResource("13_0havn")]
-position = Vector2(656, -440)
-
-[node name="level8" parent="Objects4" instance=ExtResource("9_uutfq")]
-position = Vector2(-416, -424)
-
-[node name="level_5" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-472, -352)
-
-[node name="level_6" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-376, -352)
-
-[node name="level_7" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-472, -304)
-
-[node name="level_8" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-376, -304)
-
-[node name="level_9" parent="Objects4" instance=ExtResource("17_8m6oo")]
-position = Vector2(-528, -384)
-
-[node name="level_10" parent="Objects4" instance=ExtResource("17_8m6oo")]
-position = Vector2(-80, 160)
-
-[node name="level_11" parent="Objects4" instance=ExtResource("18_uvrjk")]
-position = Vector2(80, 160)
-
-[node name="level_12" parent="Objects4" instance=ExtResource("15_2dnfj")]
-position = Vector2(-32, 128)
-
-[node name="level_13" parent="Objects4" instance=ExtResource("15_2dnfj")]
-position = Vector2(48, 96)
-
-[node name="level_14" parent="Objects4" instance=ExtResource("14_b0eaf")]
-position = Vector2(96, 96)
-
-[node name="level_15" parent="Objects4" instance=ExtResource("14_b0eaf")]
-position = Vector2(-80, 96)
-
-[node name="level_16" parent="Objects4" instance=ExtResource("12_b0eaf")]
-position = Vector2(-256, 336)
-
-[node name="level_17" parent="Objects4" instance=ExtResource("12_b0eaf")]
-position = Vector2(-80, 336)
-
-[node name="level_18" parent="Objects4" instance=ExtResource("12_b0eaf")]
-position = Vector2(-128, 400)
-
-[node name="level_19" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-256, 400)
-
-[node name="level_20" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-208, 400)
-
-[node name="level_21" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-256, 448)
-
-[node name="level_22" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-208, 448)
-
-[node name="level_23" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-208, 336)
-
-[node name="level_24" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-128, 336)
-
-[node name="level_25" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-80, 400)
-
-[node name="level_26" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-128, 448)
-
-[node name="level_27" parent="Objects4" instance=ExtResource("13_uutfq")]
-position = Vector2(-80, 448)
-
-[node name="level9" parent="Objects4" instance=ExtResource("14_ov17k")]
-position = Vector2(-528, -200)
-
-[node name="level10" parent="Objects4" instance=ExtResource("13_0havn")]
-position = Vector2(-864, -424)
-
-[node name="level_28" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-920, -368)
-
-[node name="level_29" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-904, -272)
-
-[node name="level_30" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-840, -272)
-
-[node name="level_31" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-632, 96)
-
-[node name="level_32" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-552, 96)
-
-[node name="level11" parent="Objects4" instance=ExtResource("9_uutfq")]
-position = Vector2(-576, 216)
-
-[node name="level12" parent="Objects4" instance=ExtResource("21_qflhy")]
-position = Vector2(-592, 56)
-
-[node name="level13" parent="Objects4" instance=ExtResource("14_ov17k")]
-position = Vector2(-416, 104)
-
-[node name="level14" parent="Objects4" instance=ExtResource("21_qflhy")]
-position = Vector2(-752, 312)
-
-[node name="level_33" parent="Objects4" instance=ExtResource("18_uvrjk")]
-position = Vector2(-688, 368)
-
-[node name="level_34" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-856, 432)
-
-[node name="level_35" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-712, 432)
-
-[node name="level_36" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-648, 432)
-
-[node name="level_37" parent="Objects4" instance=ExtResource("17_8m6oo")]
-position = Vector2(-816, 592)
-
-[node name="level15" parent="Objects4" instance=ExtResource("9_uutfq")]
-position = Vector2(-704, 552)
-
-[node name="level16" parent="Objects4" instance=ExtResource("13_0havn")]
-position = Vector2(-288, 744)
-
-[node name="level17" parent="Objects4" instance=ExtResource("13_0havn")]
-position = Vector2(-48, 744)
-
-[node name="level_38" parent="Objects4" instance=ExtResource("18_uvrjk")]
-position = Vector2(-336, 784)
-
-[node name="level_39" parent="Objects4" instance=ExtResource("14_b0eaf")]
-position = Vector2(336, 912)
-
-[node name="level18" parent="Objects4" instance=ExtResource("9_uutfq")]
-position = Vector2(400, 872)
-
-[node name="level19" parent="Objects4" instance=ExtResource("21_qflhy")]
-position = Vector2(608, 872)
-
-[node name="level_40" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(472, 896)
-
-[node name="level_41" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(424, 960)
-
-[node name="level_42" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(536, 896)
-
-[node name="level_43" parent="Objects4" instance=ExtResource("18_uvrjk")]
-position = Vector2(672, 928)
-
-[node name="level_44" parent="Objects4" instance=ExtResource("14_b0eaf")]
-position = Vector2(288, 416)
-
-[node name="level20" parent="Objects4" instance=ExtResource("9_uutfq")]
-position = Vector2(224, 360)
-
-[node name="level21" parent="Objects4" instance=ExtResource("21_qflhy")]
-position = Vector2(384, 520)
-
-[node name="level_45" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(360, 576)
-
-[node name="level_46" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(168, 400)
-
-[node name="level22" parent="Objects4" instance=ExtResource("9_uutfq")]
-position = Vector2(624, 552)
-
-[node name="level_47" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(408, -304)
-
-[node name="level_48" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(344, -304)
-
-[node name="level_49" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(200, -304)
-
-[node name="level_50" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-760, 624)
-
-[node name="level_51" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-664, 624)
-
-[node name="level_52" parent="Objects4" instance=ExtResource("11_b0eaf")]
-position = Vector2(-664, 672)
-
-[node name="level_54" parent="Objects4" instance=ExtResource("15_5qoex")]
-position = Vector2(-680, 320)
-
-[node name="level_55" parent="Objects4" instance=ExtResource("14_f72b0")]
-position = Vector2(-600, 560)
-
-[node name="level_56" parent="Objects4" instance=ExtResource("14_f72b0")]
-position = Vector2(-824, 560)
-
-[node name="level_57" parent="Objects4" instance=ExtResource("12_uvrjk")]
-position = Vector2(24, 752)
-
-[node name="level_58" parent="Objects4" instance=ExtResource("14_f72b0")]
-position = Vector2(696, 560)
-
-[node name="level_59" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-352, -56)
-
-[node name="level_60" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-288, -136)
-
-[node name="level_61" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-352, -168)
-
-[node name="level_62" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-176, -88)
-
-[node name="level_63" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-80, -232)
-
-[node name="level_64" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-160, -280)
-
-[node name="level_65" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(16, -344)
-
-[node name="level_66" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-80, -392)
-
-[node name="level_67" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(64, -264)
-
-[node name="level_68" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(576, -264)
-
-[node name="level_69" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(720, -296)
-
-[node name="level_70" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(720, -168)
-
-[node name="level_71" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(624, -120)
-
-[node name="level_72" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(432, -56)
-
-[node name="level_73" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(560, 56)
-
-[node name="level_74" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(704, -40)
-
-[node name="level_75" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(400, 72)
-
-[node name="level_76" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(304, 56)
-
-[node name="level_77" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(192, 88)
-
-[node name="level_78" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(304, 152)
-
-[node name="level_79" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(224, 216)
-
-[node name="level_80" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(416, 248)
-
-[node name="level_81" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(432, 152)
-
-[node name="level_82" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(544, 280)
-
-[node name="level_83" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(624, 184)
-
-[node name="level_84" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(688, 136)
-
-[node name="level_85" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(672, 328)
-
-[node name="level_86" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(672, 440)
-
-[node name="level_87" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(576, 472)
-
-[node name="level_88" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(448, 488)
-
-[node name="level_89" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(400, 408)
-
-[node name="level_90" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(304, 312)
-
-[node name="level_91" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(448, 328)
-
-[node name="level_92" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(176, 296)
-
-[node name="level_93" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-128, 248)
-
-[node name="level_94" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(48, 360)
-
-[node name="level_95" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(32, 264)
-
-[node name="level_96" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-224, 248)
-
-[node name="level_97" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-384, 264)
-
-[node name="level_98" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-320, 216)
-
-[node name="level_99" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-240, 136)
-
-[node name="level_100" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-600, 321)
-
-[node name="level_101" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-128, 40)
-
-[node name="level_102" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-96, 648)
-
-[node name="level_103" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-160, 536)
-
-[node name="level_104" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(0, 536)
-
-[node name="level_105" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(144, 488)
-
-[node name="level_106" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(128, 680)
-
-[node name="level_107" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(144, 760)
-
-[node name="level_108" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(272, 744)
-
-[node name="level_109" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(416, 664)
-
-[node name="level_110" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(416, 824)
-
-[node name="level_111" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(576, 808)
-
-[node name="level_112" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(608, 680)
-
-[node name="level_113" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(688, 792)
-
-[node name="level_114" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(224, 856)
-
-[node name="level_115" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(112, 872)
-
-[node name="level_116" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(328, 968)
-
-[node name="level_117" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(160, 984)
-
-[node name="level_118" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(560, 968)
-
-[node name="level_119" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(656, 968)
-
-[node name="level_120" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-288, 920)
-
-[node name="level_121" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-176, 904)
-
-[node name="level_122" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-240, 1000)
-
-[node name="level_123" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-240, 824)
-
-[node name="level_124" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-96, 840)
-
-[node name="level_125" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-32, 888)
-
-[node name="level_126" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-64, 968)
-
-[node name="level_127" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-368, 680)
-
-[node name="level_128" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-480, 840)
-
-[node name="level_129" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-432, 968)
-
-[node name="level_130" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-528, 968)
-
-[node name="level_131" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-640, 984)
-
-[node name="level_132" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-624, 808)
-
-[node name="level_133" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-752, 888)
-
-[node name="level_134" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-832, 824)
-
-[node name="level_135" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-912, 888)
-
-[node name="level_136" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-840, 952)
-
-[node name="level_137" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-992, 952)
-
-[node name="level_138" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-976, 776)
-
-[node name="level_139" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-832, 664)
-
-[node name="level_140" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-608, 664)
-
-[node name="level_141" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-992, 600)
-
-[node name="level_142" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-976, 392)
-
-[node name="level_143" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-944, 232)
-
-[node name="level_144" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-800, 248)
-
-[node name="level_145" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-672, 168)
-
-[node name="level_146" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-864, 104)
-
-[node name="level_147" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-992, 40)
-
-[node name="level_148" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-992, -72)
-
-[node name="level_149" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-928, -24)
-
-[node name="level_150" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-784, -88)
-
-[node name="level_151" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-672, -72)
-
-[node name="level_152" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-576, -72)
-
-[node name="level_153" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-608, -152)
-
-[node name="level_154" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-736, -216)
-
-[node name="level_155" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-496, -56)
-
-[node name="level_156" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-480, 40)
-
-[node name="level_157" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-464, 200)
-
-[node name="level_158" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-416, 392)
-
-[node name="level_159" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-352, 488)
-
-[node name="level_160" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-400, 520)
-
-[node name="level_161" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-944, -200)
-
-[node name="level_162" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-688, -312)
-
-[node name="level_163" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-544, -312)
-
-[node name="level_164" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-320, -312)
-
-[node name="level_165" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(128, -183)
-
-[node name="level_166" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(64, 40)
-
-[node name="Level 1" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-736, 464)
-
-[node name="Level 2" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-720, 464)
-
-[node name="Level 3" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-704, 464)
-
-[node name="Level 4" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-688, 464)
-
-[node name="Level 5" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-672, 464)
-
-[node name="Level 6" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-656, 464)
-
-[node name="Level 7" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-640, 464)
-
-[node name="Level 8" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(-624, 464)
-
-[node name="Level 9" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-752, 448)
-
-[node name="Level 10" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-752, 432)
-
-[node name="Level 11" parent="Objects4" instance=ExtResource("5_po04c")]
-position = Vector2(-608, 464)
-
-[node name="Level 12" parent="Objects4" instance=ExtResource("4_5q1rr")]
-position = Vector2(-752, 464)
-
-[node name="Level 13" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 448)
-
-[node name="Level 14" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 432)
-
-[node name="Level 15" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 416)
-
-[node name="Level 16" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 400)
-
-[node name="Level 17" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 384)
-
-[node name="Level 18" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 368)
-
-[node name="Level 19" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-608, 352)
-
-[node name="Level 20" parent="Objects4" instance=ExtResource("8_b0eaf")]
-position = Vector2(-608, 336)
-
-[node name="Level 21" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 768)
-
-[node name="Level 22" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 752)
-
-[node name="Level 23" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 736)
-
-[node name="Level 24" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 720)
-
-[node name="Level 25" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 704)
-
-[node name="Level 26" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 688)
-
-[node name="Level 27" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 672)
-
-[node name="Level 28" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 656)
-
-[node name="Level 29" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(-144, 640)
-
-[node name="Level 30" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 688)
-
-[node name="Level 31" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 672)
-
-[node name="Level 32" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 656)
-
-[node name="Level 33" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 640)
-
-[node name="Level 34" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 768)
-
-[node name="Level 35" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 752)
-
-[node name="Level 36" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 736)
-
-[node name="Level 37" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 720)
-
-[node name="Level 38" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(-192, 704)
-
-[node name="Level 39" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(135, 432)
-
-[node name="Level 40" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(135, 416)
-
-[node name="Level 41" parent="Objects4" instance=ExtResource("6_u4arb")]
-position = Vector2(135, 400)
-
-[node name="Level 42" parent="Objects4" instance=ExtResource("8_b0eaf")]
-position = Vector2(320, 384)
-
-[node name="Level 43" parent="Objects4" instance=ExtResource("9_u4arb")]
-position = Vector2(144, 384)
-
-[node name="Level 44" parent="Objects4" instance=ExtResource("4_5q1rr")]
-position = Vector2(144, 448)
-
-[node name="Level 45" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(329, 432)
-
-[node name="Level 46" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(329, 416)
-
-[node name="Level 47" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(329, 400)
-
-[node name="Level 48" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(304, 384)
-
-[node name="Level 49" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(288, 384)
-
-[node name="Level 50" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(272, 384)
-
-[node name="Level 51" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(256, 448)
-
-[node name="Level 52" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(272, 448)
-
-[node name="Level 53" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(288, 448)
-
-[node name="Level 54" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(304, 448)
-
-[node name="Level 55" parent="Objects4" instance=ExtResource("5_po04c")]
-position = Vector2(320, 448)
-
-[node name="Level 56" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(160, 448)
-
-[node name="Level 57" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(176, 448)
-
-[node name="Level 58" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(192, 448)
-
-[node name="Level 59" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(208, 448)
-
-[node name="Level 60" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(160, 384)
-
-[node name="Level 61" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(176, 384)
-
-[node name="Level 62" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(176, 384)
-
-[node name="Level 63" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(448, 896)
-
-[node name="Level 64" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(320, 896)
-
-[node name="Level 65" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(336, 896)
-
-[node name="Level 66" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(352, 896)
-
-[node name="Level 67" parent="Objects4" instance=ExtResource("9_u4arb")]
-position = Vector2(304, 896)
-
-[node name="Level 68" parent="Objects4" instance=ExtResource("4_5q1rr")]
-position = Vector2(304, 1008)
-
-[node name="Level 69" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(304, 992)
-
-[node name="Level 70" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(304, 976)
-
-[node name="Level 71" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(304, 960)
-
-[node name="Level 72" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(304, 944)
-
-[node name="Level 73" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(304, 928)
-
-[node name="Level 74" parent="Objects4" instance=ExtResource("7_icc4n")]
-position = Vector2(304, 912)
-
-[node name="Level 75" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(320, 1008)
-
-[node name="Level 76" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(336, 1008)
-
-[node name="Level 77" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(352, 1008)
-
-[node name="Level 78" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(368, 1008)
-
-[node name="Level 79" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(384, 1008)
-
-[node name="Level 80" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(400, 1008)
-
-[node name="Level 81" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(416, 1008)
-
-[node name="Level 82" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(432, 1008)
-
-[node name="Level 83" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(448, 1008)
-
-[node name="Level 84" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(464, 1008)
-
-[node name="Level 85" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(480, 1008)
-
-[node name="Level 86" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(528, 1008)
-
-[node name="Level 87" parent="Objects4" instance=ExtResource("3_v3ani")]
-position = Vector2(544, 1008)
-
-[node name="Level 88" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(560, 1008)
-
-[node name="Level 89" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(576, 1008)
-
-[node name="Level 90" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(592, 1008)
-
-[node name="Level 91" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(608, 1008)
-
-[node name="Level 92" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(624, 1008)
-
-[node name="Level 93" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(640, 1008)
-
-[node name="Level 94" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(656, 1008)
-
-[node name="Level 95" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(672, 1008)
-
-[node name="Level 96" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(688, 1008)
-
-[node name="Level 97" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(656, 896)
-
-[node name="Level 98" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(672, 896)
-
-[node name="Level 99" parent="Objects4" instance=ExtResource("27_f72b0")]
-position = Vector2(688, 896)
-
-[node name="Level 100" parent="Objects4" instance=ExtResource("8_b0eaf")]
-position = Vector2(704, 896)
-
-[node name="Level 101" parent="Objects4" instance=ExtResource("5_po04c")]
-position = Vector2(704, 1008)
-
-[node name="level_53" parent="Objects4" instance=ExtResource("26_qflhy")]
-position = Vector2(-272, 56)
-
-[node name="Objects5" type="Node" parent="."]
-
-[node name="level5" parent="Objects5" instance=ExtResource("9_uutfq")]
-position = Vector2(-64, -160)
 
 [node name="missile spawner" type="Timer" parent="."]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ea7v76bcsf6h"]
+[gd_scene load_steps=20 format=3 uid="uid://ea7v76bcsf6h"]
 
 [ext_resource type="Script" uid="uid://crf2drxts4gwl" path="res://scripts/missile.gd" id="1_qigsf"]
 [ext_resource type="Texture2D" uid="uid://dbwshnb5bxodl" path="res://assets/missile.png" id="2_kimve"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cn75ghptnofrn" path="res://scripts/follow_player.gd" id="4_kimve"]
 [ext_resource type="AudioStream" uid="uid://b8hkancnihrlo" path="res://assets/audio/517169__mrthenoronha__rocket-launcher-1-8-bit.ogg" id="5_17p7i"]
 [ext_resource type="FontFile" uid="uid://8uhqyflogrwk" path="res://assets/PIXEARG_.TTF" id="6_su343"]
+[ext_resource type="Script" uid="uid://dlbelcubqf30e" path="res://scripts/damage_taken.gd" id="7_6opch"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6opch"]
 atlas = ExtResource("2_kimve")
@@ -107,8 +108,11 @@ _data = {
 }
 
 [node name="missile" type="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
 collision_layer = 0
 collision_mask = 0
+up_direction = Vector2(0, 1)
 script = ExtResource("1_qigsf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -159,6 +163,8 @@ stream = ExtResource("5_17p7i")
 
 [node name="Seconds" type="Label" parent="."]
 visible = false
+z_index = 3
+y_sort_enabled = true
 offset_right = 140.0
 offset_bottom = 23.0
 scale = Vector2(0.5, 0.5)
@@ -167,6 +173,21 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("6_su343")
 text = "- 10 Seconds!!!"
+
+[node name="damage_taken" type="RichTextLabel" parent="."]
+visible = false
+z_index = 2
+texture_filter = 1
+offset_left = 24.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 39.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/default_color = Color(0.862745, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("6_su343")
+text = "-1"
+script = ExtResource("7_6opch")
 
 [connection signal="area_entered" from="HurtZone" to="." method="_on_hurt_zone_area_entered"]
 [connection signal="area_exited" from="HurtZone" to="." method="_on_hurt_zone_area_exited"]
